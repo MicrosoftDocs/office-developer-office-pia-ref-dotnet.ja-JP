@@ -1,0 +1,596 @@
+<Type Name="SharedWorkspace" FullName="Microsoft.Office.Core.SharedWorkspace">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="71a452a8173817374f9c4faa7efc94b837c407ff" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660660" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SharedWorkspace : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharedWorkspace implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SharedWorkspace" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SharedWorkspace&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SharedWorkspace : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0385-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>このオブジェクト、メンバー、または列挙型は推奨されていませんし、コード内で使用するものではありません。<b>SharedWorkspace</b>オブジェクトにより、開発者は、サーバー上の Microsoft Windows SharePoint Services のドキュメント ワークスペースを作業中の文書を追加するのには、共有ワークスペースの他のオブジェクトを管理するためです。</summary>
+    <remarks>
+      <para>オブジェクトを Microsoft Office Word 2003<b>文書</b>、Microsoft Office Excel 2003<b>ブック</b>のオブジェクト、および Microsoft Office PowerPoint 2003<b>プレゼンテーション</b>オブジェクトの<b>SharedWorkspace</b>プロパティは、<b>ワークスペース</b>を返します。オブジェクト</para>。
+      <para>使用<b>SharedWorkspace</b>オブジェクトをワークスペースの共同作業の機能を活用するためにするか、接続を切断または削除するには、サーバー上の Windows SharePoint Services のドキュメント ワークスペースを作業中の Word、Excel、または PowerPoint のドキュメントを追加するのにはワークスペースからドキュメントです。<b>SharedWorkspace</b>オブジェクトのコレクションを使用して、ファイル、フォルダー、リンク、メンバー、および共有ドキュメントに関連付けられているタスクを管理します</para>。
+      <para><b>SharedWorkspace</b>オブジェクト モデルは、ドキュメントをワークスペースに保存するかどうか使用できます。<b>SharedWorkspace</b>オブジェクトのプロパティ、<b>ドキュメント</b>、<b>ブック</b>、および<b>プレゼンテーション</b>を返さない何もドキュメントが共有されていない場合。使用して、<see cref="P:Microsoft.Office.Core.SharedWorkspace.Connected" />作業中の文書が実際に保存され、共有ワークスペースに接続されているかどうかを判断するのには<b>SharedWorkspace</b>オブジェクトのプロパティです</para>。
+      <para>ユーザーが<b>SharedWorkspace</b>オブジェクト階層内のオブジェクト、プロパティ、およびメソッドを使用する適切なアクセス許可を必要とします</para>。
+      <para>使用、<see cref="T:Microsoft.Office.Core.SharedWorkspaceFiles" />を使用してアクセスして、コレクションの<see cref="P:Microsoft.Office.Core.SharedWorkspace.Files" />ドキュメントおよび共有ワークスペースに保存されたファイルを管理するのには、 <b>SharedWorkspace</b>オブジェクトのプロパティです</para>。
+      <para>使用、<see cref="T:Microsoft.Office.Core.SharedWorkspaceFolders" />を使用してアクセスして、コレクションの<see cref="P:Microsoft.Office.Core.SharedWorkspace.Folders" />共有ワークスペースのメイン ドキュメント ライブラリ フォルダー内のサブフォルダーを管理するのには、 <b>SharedWorkspace</b>オブジェクトのプロパティです</para>。
+      <para>使用、<see cref="T:Microsoft.Office.Core.SharedWorkspaceLinks" />を使用してアクセスして、コレクション、<see cref="P:Microsoft.Office.Core.SharedWorkspace.Links" />その他のドキュメントと共有ドキュメントで共同作業しているメンバーに必要な情報へのリンクを管理するのには、 <b>SharedWorkspace</b>オブジェクトのプロパティワークスペース</para>。
+      <para>使用、<see cref="T:Microsoft.Office.Core.SharedWorkspaceMembers" />を使用してアクセスして、コレクション、<see cref="P:Microsoft.Office.Core.SharedWorkspace.Members" />を共有ワークスペースに参加して、ワークスペースに保存されている共有ドキュメントで共同作業を行うには権限を持つユーザーを管理するのには、 <b>SharedWorkspace</b>オブジェクトのプロパティです</para>。
+      <para>使用、<see cref="T:Microsoft.Office.Core.SharedWorkspaceTasks" />を使用してアクセスして、コレクションの<see cref="P:Microsoft.Office.Core.SharedWorkspace.Tasks" />共有ワークスペース内のドキュメントで共同作業しているメンバーに割り当てられたタスクを管理するのには、 <b>SharedWorkspace</b>オブジェクトのプロパティ</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Core.SharedWorkspace.CreateNew(System.Object,System.Object)" />メソッドを新しいドキュメント ワークスペースを作成するのには、作業中の文書をワークスペースに追加します。使用して、<see cref="P:Microsoft.Office.Core.SharedWorkspace.Name" />と<see cref="P:Microsoft.Office.Core.SharedWorkspace.URL" />ワークスペースに関する情報を返すプロパティです</para>。
+      <para><b>SharedWorkspace</b>オブジェクトは、オブジェクトとサーバーのプロパティのローカル キャッシュを使用します。開発者は、特定の操作を実行する前にこのキャッシュを更新する、またはキャッシュされたプロパティの変更をサーバーに保存する必要があります。使用して、<see cref="M:Microsoft.Office.Core.SharedWorkspace.Refresh" />に、サーバーからローカルのキャッシュを更新して、 <b>SharedWorkspace</b>オブジェクトのメソッド、<see cref="P:Microsoft.Office.Core.SharedWorkspace.LastRefreshed" />と更新操作最後が行われるかを決定するプロパティです。<b>Save</b>メソッドを使用して、<see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />と<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />の変更をサーバーにアップロードするためにローカルでのプロパティを変更した後のオブジェクト</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Core.SharedWorkspace.Disconnect" />ワークスペースで共有コピーを維持したまま、作業中の文書のローカル コピーを共有ワークスペースから切断するメソッドです。使用して、<see cref="M:Microsoft.Office.Core.SharedWorkspace.RemoveDocument" />共有ワークスペースから共有ドキュメントを完全に削除します</para>。
+      <para>ユーザーには、 <b>SharedWorkspace</b>オブジェクト階層内のオブジェクト、プロパティおよびメソッドを使用する適切なアクセス許可が必要です。使用、<paramref name="Role" />引数にメンバーを追加する場合、<see cref="T:Microsoft.Office.Core.SharedWorkspaceMembers" />ワークスペースの各メンバーに固有のアクセス許可のセットを指定するコレクションです</para>。<b>SharedWorkspace</b>オブジェクト モデルを使用する場合は、 
+      <para>、ことは条件を作成するのには、 <b>SharedWorkspace</b>オブジェクト キャッシュは、作業中の文書の [共有ワークスペース] ウィンドウに表示されるユーザー インターフェイスと同期されていません。たとえば、 <b>CreateNew</b>メソッドを呼び出すプログラムを使用して追加する場合、作業中の文書を新しいワークスペースの [共有ワークスペース] ウィンドウが開いているときに、[共有ワークスペース] ウィンドウは引き続き [作成] ボタンを表示します。ような状況でユーザーが無効になっている [共有ワークスペース] ウィンドウで選択を行う場合は、エラーが発生し、ドキュメントの現在の状態と共有ワークスペース データとの間で同期の更新操作が実行される</para>。
+      <para>、 <see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />、いて、<b>プレゼンテーション</b>のオブジェクトを返す<b>Sync</b>プロパティの<see cref="T:Microsoft.Office.Core.Sync" />オブジェクトです。共有ドキュメントのサーバー コピーとローカルの同期を管理する<b>同期</b>オブジェクトおよびそのプロパティとメソッドを使用します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connected">
+      <MemberSignature Language="C#" Value="public bool Connected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Connected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Connected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Connected { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の文書が現在の保存、共有ワークスペースに接続されているかどうかを示す<b>ブール</b>値を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Core.SharedWorkspace.Disconnect" />のメソッド、<see cref="T:Microsoft.Office.Core.SharedWorkspace" />作業中の文書のローカル コピーを共有ワークスペースから切断するオブジェクト。使用して、 <see cref="M:Microsoft.Office.Core.SharedWorkspace.RemoveDocument" /> 、共有ワークスペースからドキュメントを削除する方法です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNew">
+      <MemberSignature Language="C#" Value="public void CreateNew (object URL, object Name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateNew([in]object URL, [in]object Name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspace.CreateNew(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateNew (Optional URL As Object, Optional Name As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="URL" Type="System.Object" />
+        <Parameter Name="Name" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="URL">省略可能な<b>文字列</b>です。 新しい共有ワークスペースの作成先とする親フォルダーの URL を指定します。 URL を指定しない場合は、ユーザーの既定のサーバーの場所に新しい共有ワークスペースが作成されます。</param>
+        <param name="Name">省略可能な<b>文字列</b>です。 新しい共有ワークスペースの名前です。 既定値は作業中の文書、ファイル拡張子なしの名前です。 たとえば、Budget.xls の共有ワークスペースを作成する場合、新しい共有ワークスペースの名前が「予算」です。</param>
+        <summary>サーバーに新しいドキュメント ワークスペースを作成し、作業中の文書を新しい共有ワークスペースに追加します。</summary>
+        <remarks>
+          <para>作業中の文書の新しい共有ワークスペースを作成するのにには、 <b>CreateNew</b>メソッドを使用します。ユーザーの既定のサーバーの場所で作業中の文書の名前を使用してワークスペースを作成する 2 つの省略可能な引数を省略します</para>。
+          <para><b>CreateNew</b>メソッドでは、作業中の文書に保存されていない変更がある場合にエラーが発生します。共有ワークスペースに追加する前にドキュメントを保存する必要があります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.SharedWorkspace.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspace.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>現在の共有ワークスペースとその中のすべてのデータを削除します。</summary>
+        <remarks>
+          <para>ユーザーが現在の共有ワークスペースを削除する権限を持っていない場合、 <b>Delete</b>メソッドは失敗します</para>。
+          <para>作業中の文書が文書を開いた場合、ワークスペースから直接、ワークスペースを削除した後は、不要になったディスクに保存されます。開発者する必要があります、それを閉じる前に別の場所にドキュメントを保存することを忘れないでくださいまたはドキュメントは存在しなくなります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspace.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disconnect();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>作業中の文書のローカル コピーを共有ワークスペースから切断します。</summary>
+        <remarks>
+          <para>共有ワークスペースから作業中の文書のローカル コピーをデタッチするのにには、 <b>Disconnect</b>メソッドを使用します。このメソッドは、サーバーに共有ドキュメントを残しますただし、ローカル コピーは共有コピーとの同期が不要になったと、不要になった共有ワークスペースの他のコラボレーション機能を活用できます。使用して、 <see cref="M:Microsoft.Office.Core.SharedWorkspace.RemoveDocument" /> 、サーバーから共有ドキュメントを削除する方法です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFiles Files { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceFiles Files" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As SharedWorkspaceFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceFiles ^ Files { Microsoft::Office::Core::SharedWorkspaceFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFiles" /> 、現在の共有ワークスペースに関連付けられているドキュメント ライブラリに格納されているファイルのリストを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFolders Folders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceFolders Folders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Folders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Folders As SharedWorkspaceFolders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceFolders ^ Folders { Microsoft::Office::Core::SharedWorkspaceFolders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFolders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolders" /> 、現在の共有ワークスペースに関連付けられているドキュメント ライブラリ内のサブフォルダーのリストを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Sharedworkspace</b>コレクションは、ルート ドキュメント ライブラリ フォルダー自体には、既定で [共有ドキュメント] と呼ばれるには含まれません。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastRefreshed">
+      <MemberSignature Language="C#" Value="public object LastRefreshed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LastRefreshed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.LastRefreshed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastRefreshed As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LastRefreshed { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>日付し、時間、<see cref="M:Microsoft.Office.Core.SharedWorkspace.Refresh" />メソッドが最後に呼び出されます。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>最後</b>のプロパティでは、 <b>Refresh</b>メソッドが呼び出されていない場合にエラーが発生します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceLinks Links { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceLinks Links" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Links" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As SharedWorkspaceLinks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceLinks ^ Links { Microsoft::Office::Core::SharedWorkspaceLinks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLinks" /> 、現在の共有ワークスペースに保存されているリンクのリストを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceMembers Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceMembers Members" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Members" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As SharedWorkspaceMembers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceMembers ^ Members { Microsoft::Office::Core::SharedWorkspaceMembers ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceMembers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.SharedWorkspaceMembers" />の現在の共有ワークスペースのメンバーのリストを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Name" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの名前を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspace.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>ローカル キャッシュを更新する、<see cref="T:Microsoft.Office.Core.SharedWorkspace" />オブジェクトのファイル、フォルダー、リンク、メンバー、およびサーバーからのタスクです。</summary>
+        <remarks>
+          <para>オブジェクトとそのプロパティを共有ワークスペースからの最新のリストを使用していることを確認するのにには、 <b>Refresh</b>メソッドを使用します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDocument">
+      <MemberSignature Language="C#" Value="public void RemoveDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveDocument() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspace.RemoveDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDocument ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDocument();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>作業中のドキュメントを共有ワークスペースから削除します。</summary>
+        <remarks>
+          <para>ユーザーが共有ワークスペースのドキュメントをサーバーから削除する権限を持たない場合、サーバー側のコピーがそのままですが、ドキュメントのローカル コピーが共有ワークスペースから切断されています。ドキュメントが、ワークスペースから直接開かれているし、 <b>RemoveDocument</b>を使用してワークスペースから削除された場合は、ドキュメントを閉じる前に別の場所に保存する必要があります。それ以外の場合、ワークスペースのままです</para>。
+          <para>使用して、<see cref="M:Microsoft.Office.Core.SharedWorkspace.Disconnect" />共有コピーを削除することがなく、ドキュメント ワークスペースからドキュメントのローカル コピーをデタッチします</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceURL">
+      <MemberSignature Language="C#" Value="public string SourceURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.SourceURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>別のドキュメント ワークスペース サイトでドキュメントが改訂された後の変更、公開する必要があります共有ドキュメントの公開コピーの場所を指定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Windows SharePoint Services のユーザー インターフェイスでは、パブリックの共有ドキュメントを一時的な共同作業用に、別のドキュメント ワークスペースにドキュメント ライブラリからコピーし、元の元の場所に変更を発行することができます。<b>直すこと</b>は、一時的なワークスペースに格納されているドキュメントのコピーの元の場所を示します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tasks">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceTasks Tasks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceTasks Tasks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.Tasks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tasks As SharedWorkspaceTasks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceTasks ^ Tasks { Microsoft::Office::Core::SharedWorkspaceTasks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceTasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceTasks" /><b />現在の共有ワークスペース内のタスクのリストを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URL">
+      <MemberSignature Language="C#" Value="public string URL { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string URL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspace.URL" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property URL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ URL { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>最上位レベル (URL) の共有ワークスペースを取得します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>URL</b>プロパティは、この形式で、共有ワークスペースのアドレスを返しますhttp://server/sites/user/workspace/です。</para> 。
+          <para><b>URL</b>プロパティは、URL エンコードされた文字列を返します。たとえば、フォルダー名にスペースは %20 として表さ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

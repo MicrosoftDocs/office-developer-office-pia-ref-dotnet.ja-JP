@@ -1,0 +1,167 @@
+<Type Name="IAssistance" FullName="Microsoft.Office.Core.IAssistance">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7d132f43925371385c5db2be9aa6102237cdaa66" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661310" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IAssistance" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAssistance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IAssistance" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAssistance" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAssistance" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4291224C-DEFE-485B-8E69-6CF8AA85CB76")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>開発者が Microsoft Office 内でユーザー用にユーザー設定のヘルプを作成できるようにします。</summary>
+    <remarks>
+      <para>
+        <b>支援</b>、<b>アプリケーション</b>オブジェクトのプロパティを取得、<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトです。<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトは、Office ホスト アプリケーションの [ヘルプ] ウィンドウに付属している開発者が Office ヘルプ ビューアーでヘルプ トピックを表示するか、ヘルプ トピックを表示するをできるようにするメソッドを公開します。開発者は、特定のヘルプ Id をヘルプ システムに渡すか、または特定の検索クエリを渡します。Id をヘルプ ID のヘルプ トピックを取得するためにヘルプ ファイルに明示的に追加する必要があるに役立ちます。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearDefaultContext">
+      <MemberSignature Language="C#" Value="public void ClearDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ClearDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">既定のヘルプ トピックの ID を指定します。</param>
+        <summary>既に定義されている既定のヘルプ トピックをクリア、<see cref="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" />メソッドです。</summary>
+        <remarks>
+          <para>このメソッドを実行してから、ユーザーが f1 キーを押すかダイアログ ボックスの [ヘルプ] をクリックしたときに表示する既定のヘルプ トピックを停止します</para>。<b>アプリケーション</b>オブジェクトのプロパティを
+          <para><b>サポート</b><see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトです。<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトは、Office ホスト アプリケーションの [ヘルプ] ウィンドウに付属している開発者が Office ヘルプ ビューアーでヘルプ トピックを表示するか、ヘルプ トピックを表示するをできるようにするメソッドを公開します。開発者は、特定のヘルプ Id をヘルプ システムに渡すか、または特定の検索クエリを渡します。ヘルプ Id をヘルプ ID のヘルプ トピックを取得するためにヘルプ ファイルに明示的に追加する必要がある</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchHelp">
+      <MemberSignature Language="C#" Value="public void SearchHelp (string Query, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SearchHelp([in]string Query, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SearchHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SearchHelp (Query As String, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Query" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Query">検索のキーワードまたは句を表します。</param>
+        <param name="Scope">ホスト アプリケーション内で登録されている名前空間を省略可能な。</param>
+        <summary>1 つまたは複数のキーワードに基づいて、Office ヘルプ ビューアーからの検索を実行します。キーワードには単語または句を指定できます。</summary>
+        <remarks>
+          <para>
+            <b>支援</b>、<b>アプリケーション</b>オブジェクトのプロパティを取得、<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトです。<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトは、Office ホスト アプリケーションの [ヘルプ] ウィンドウに付属している開発者が Office ヘルプ ビューアーでヘルプ トピックを表示するか、ヘルプ トピックを表示するをできるようにするメソッドを公開します。開発者は、特定のヘルプ Id をヘルプ システムに渡すか、または特定の検索クエリを渡します。ヘルプ Id をヘルプ ID のヘルプ トピックを取得するためにヘルプ ファイルに明示的に追加する必要がある</para>。
+          <para>ユーザーは必要、指定したスコープは、アプリケーションに適用可能な限り、検索範囲を絞り込むと、関連性の高いヘルプを返すことができます。次のスコープは、Microsoft Office アプリケーション内で使用できます。既定では、スコープが現在のアプリケーションの名前空間を設定場合は、 <b>Null</b>文字列 ("") をパラメーターとして渡されます</para>。
+          <list type="table"><item><description>すべて</description><description>""(Null 文字列)</description></item><item><description>アクセス、Excel、Outlook、PowerPoint、プロジェクト、Publisher、SharePoint Designer、Visio および Word</description>の
+              <description>開発</description></item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultContext">
+      <MemberSignature Language="C#" Value="public void SetDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">既定のヘルプ トピックの ID を指定します。</param>
+        <summary>ヘルプ トピックを、ユーザーがヘルプ ウィンドウを開いたときに表示される既定のトピックとして設定します。</summary>
+        <remarks>Office には、そのスコープ内で既定のヘルプ トピックを既に定義されている場合、<para>このメソッドで指定されたヘルプ トピックは表示されません。さらに、ID がメソッドによって渡されるかどうかに関係なく、一部のダイアログ ボックスの Office に付属しているヘルプ トピックが表示ユーザーが F1 キーを押すか、[ヘルプ] ボタンをクリックしたとき。たとえば、ユーザー独自のダイアログ ボックスでは、f1 キーを押した場合は、ユーザー定義または組み込みのヘルプ トピックは表示の開発者によって指定されている場合。既定の ID が指定されていない場合既定の組み込みの Office のヘルプ トピックが表示します。同様に、ユーザーが、[新しい文書] ダイアログ ボックスの場合は、たとえば、Office の指定されたヘルプ トピックが表示別の ID がメソッドによって渡されるかどうかに関係なく。</para><b>アプリケーション</b>オブジェクトのプロパティを
+          <para><b>サポート</b><see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトです。<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトは、Office ホスト アプリケーションの [ヘルプ] ウィンドウに付属している開発者が Office ヘルプ ビューアーでヘルプ トピックを表示するか、ヘルプ トピックを表示するをできるようにするメソッドを公開します。開発者は、特定のヘルプ Id をヘルプ システムに渡すか、または特定の検索クエリを渡します。ヘルプ Id をヘルプ ID のヘルプ トピックを取得するためにヘルプ ファイルに明示的に追加する必要がある</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public void ShowHelp (string HelpId = &quot;&quot;, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelp([in]string HelpId, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ShowHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowHelp (Optional HelpId As String = &quot;&quot;, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">オプションでは、ヘルプ トピックの ID です。</param>
+        <param name="Scope">ホスト アプリケーション内で登録されている名前空間を省略可能な。</param>
+        <summary>Office のヘルプ ビューアー内に指定した ID のヘルプ トピックを表示したり、Office に組み込まれているヘルプ トピックを現在の Office アプリケーションのヘルプ ウィンドウに表示したりします。</summary>
+        <remarks>
+          <para>
+            <b>支援</b>、<b>アプリケーション</b>オブジェクトのプロパティを取得、<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトです。<see cref="T:Microsoft.Office.Core.IAssistance" />オブジェクトは、Office ホスト アプリケーションの [ヘルプ] ウィンドウに付属している開発者が Office ヘルプ ビューアーでヘルプ トピックを表示するか、ヘルプ トピックを表示するをできるようにするメソッドを公開します。開発者は、特定のヘルプ Id をヘルプ システムに渡すか、または特定の検索クエリを渡します。ヘルプ Id をヘルプ ID のヘルプ トピックを取得するためにヘルプ ファイルに明示的に追加する必要がある</para>。
+          <para>次のスコープは、Microsoft Office アプリケーション内で使用できます。既定では、スコープが現在のアプリケーションの名前空間を設定場合は、 <b>Null</b>文字列 ("") をパラメーターとして渡されます</para>。
+          <list type="table"><item><description>すべて</description><description>""(Null 文字列)</description></item><item><description>アクセス、Excel、Outlook、PowerPoint、プロジェクト、Publisher、SharePoint Designer、Visio および Word</description>の
+              <description>開発</description></item></list><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

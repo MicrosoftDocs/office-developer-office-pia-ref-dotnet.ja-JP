@@ -1,0 +1,153 @@
+<Type Name="IRibbonControl" FullName="Microsoft.Office.Core.IRibbonControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="68773fd86e42dc3132be028386c9b8eeaf465f51" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661329" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRibbonControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRibbonControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IRibbonControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRibbonControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRibbonControl" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0395-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>各リボン ユーザー インターフェイス (UI) コントロールのコールバック プロシージャに渡されるオブジェクトを表します。</summary>
+    <remarks>
+      <para>
+        <b>IRibbonControl</b>オブジェクトには、リボンの UI コントロールのコントロールと現在の<b>ウィンドウ</b>オブジェクトの名前 (ID) が含まれています。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>C# で記述された次の例は、Button コントロールと ToggleButton コントロールの<b>onAction</b>イベント プロシージャから呼び出される 2 つの手順を示します。最初の手順でコントロールを表す<b>IRibbonControl</b>オブジェクトがプロシージャに渡され、ボタンの ID と共に、ボタンが押されたことを示すメッセージ ボックスが表示されます。2 番目の手順は、最初のようにボタンが押されたことを示す<b>ブール値</b>パラメーターを追加します。</para>
+      <code>&lt;span class="label"&gt;public void ButtonOnAction(IRibbonControl control) 
+   MessageBox.Show("Button clicked: " + control.Id); 
+} 
+ 
+public void ToggleButtonOnAction(IRibbonControl control, bool pressed) 
+{ 
+ 
+ 
+...if (pressed) 
+ 
+      MessageBox.Show("ToggleButton was switched on."); 
+ 
+ 
+   else 
+      MessageBox.Show("ToggleButton was switched off."); 
+ 
+}&lt;/span&gt;</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>コールバック プロシージャを起動するリボン ユーザー インターフェイスを含むアクティブ ウィンドウを表します。値の取得のみ可能です。</summary>
+        <value>オブジェクト</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>リボン XML マークアップ カスタマイズ ファイルで指定されているコントロールの ID を取得します。値の取得のみ可能です。</summary>
+        <value>String</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public string Tag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティを使って任意の文字列を格納し、実行時にその文字列を取り出します。値の取得のみ可能です。</summary>
+        <value>String</value>
+        <remarks>
+          <para>通常、 <b>Id</b>プロパティを使用してリボン ユーザー インターフェイス XML カスタマイズ ファイル内のコントロールの間で区別できます。ただし、Id に含めることができます上の制限がある (英数字以外の文字を含まないし、それらすべて一意でなければなりません)。 <b>Tag</b>プロパティは、これらの制限を持っていないし、ID が動作しない、次の状況で使用するため:</para>
+          <list type="bullet">
+            <item>
+              <para>の場合は、ファイル名などのコントロールに特殊文字を格納する必要があります。 例: tag="C:\path\file.xlsm」</para>
+            </item> 。
+            <item><para>に複数のコントロールをする場合、コールバック プロシージャで同じ方法で処理しますが、Id (一意である必要があります) のすべてのリストを保持したくないです。 などの可能性があります、リボンの異なるタブにボタンがある、すべてタグ ="blue"、および<b>ID</b>プロパティではなく<b>Tag</b>プロパティをチェックするだけと、追加いくつかの一般的な操作です</para></item></list>。
+          <para /><para /></remarks>
+        <example>
+          <para>リボン ユーザー インターフェイスをカスタマイズするために使用する XML を次のようにタグを設定できます。MyFunction 処理が呼び出されると、「何らかの文字列」なりますが、 <b>Tag</b>プロパティを読み取ることができます。</para>
+          <code>&lt;span class="label"&gt;&amp;lt;button id=”mybutton” tag=”some string” onAction=”MyFunction”/&amp;gt;&lt;/span&gt;</code>
+        </example>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

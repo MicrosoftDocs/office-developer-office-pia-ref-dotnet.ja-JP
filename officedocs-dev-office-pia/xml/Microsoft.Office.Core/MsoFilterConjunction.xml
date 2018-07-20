@@ -1,0 +1,72 @@
+<Type Name="MsoFilterConjunction" FullName="Microsoft.Office.Core.MsoFilterConjunction">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="648c188356213c39218bacac1b27989a36fc67b3" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661469" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum MsoFilterConjunction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsoFilterConjunction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.MsoFilterConjunction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MsoFilterConjunction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MsoFilterConjunction" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>他のフィルター条件をフィルター条件がどのように関連するかを指定します。</summary>
+    <remarks>
+      <para>
+        <b>ODSOFilters</b>オブジェクトの<b>組み合わせ</b>のプロパティおよび<b>MailMergeFilters</b>オブジェクトの<b>Add</b>メソッドを使用します。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="msoFilterConjunctionAnd">
+      <MemberSignature Language="C#" Value="msoFilterConjunctionAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoFilterConjunction msoFilterConjunctionAnd = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoFilterConjunction.msoFilterConjunctionAnd" />
+      <MemberSignature Language="VB.NET" Value="msoFilterConjunctionAnd" />
+      <MemberSignature Language="C++ CLI" Value="msoFilterConjunctionAnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoFilterConjunction</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <b></b>連動します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoFilterConjunctionOr">
+      <MemberSignature Language="C#" Value="msoFilterConjunctionOr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoFilterConjunction msoFilterConjunctionOr = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoFilterConjunction.msoFilterConjunctionOr" />
+      <MemberSignature Language="VB.NET" Value="msoFilterConjunctionOr" />
+      <MemberSignature Language="C++ CLI" Value="msoFilterConjunctionOr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoFilterConjunction</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <b>または</b>併用します。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

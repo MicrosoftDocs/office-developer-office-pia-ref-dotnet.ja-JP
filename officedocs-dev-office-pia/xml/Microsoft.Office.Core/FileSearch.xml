@@ -1,0 +1,601 @@
+<Type Name="FileSearch" FullName="Microsoft.Office.Core.FileSearch">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6b9b7b2b808d83357cc4a067d756b5cc9697f058" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661008" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileSearch : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileSearch implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.FileSearch" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileSearch&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileSearch : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0332-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4176)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>[ファイル] メニューで、[開く] ダイアログ ボックスの機能を表します。</summary>
+    <remarks>
+      <para>
+        <b>FileSearch</b>オブジェクトを取得するのには、 <b>FileSearch</b>オブジェクトのプロパティの個別のアプリケーションの<b>アプリケーション</b>を使用します</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Core.FileSearch.NewSearch" />検索条件を既定の設定にリセットするメソッドです。<b>NewSearch</b>メソッドを使用して選択的にプロパティを設定できます、次のファイル検索の前のプロパティ値を手動でリセットすることがなく検索を実行すると後に、すべてのプロパティ値が保持されます</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.FileSearch.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティの<b>場合、スペース</b>、 <b>SharedWorkspaceFolder</b>、 <b>SharedWorkspaceLink</b>、 <b>SharedWorkspaceTask</b>オブジェクトを使用して、それらのオブジェクトを作成したユーザーの名前を返します。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public int Execute (Microsoft.Office.Core.MsoSortBy SortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Microsoft.Office.Core.MsoSortOrder SortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, bool AlwaysAccurate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Execute([in]valuetype Microsoft.Office.Core.MsoSortBy SortBy, [in]valuetype Microsoft.Office.Core.MsoSortOrder SortOrder, [in]bool AlwaysAccurate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute (Optional SortBy As MsoSortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Optional SortOrder As MsoSortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, Optional AlwaysAccurate As Boolean = false) As Integer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SortBy" Type="Microsoft.Office.Core.MsoSortBy" />
+        <Parameter Name="SortOrder" Type="Microsoft.Office.Core.MsoSortOrder" />
+        <Parameter Name="AlwaysAccurate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="SortBy">省略可能な<see cref="T:Microsoft.Office.Core.MsoSortBy" />。 取得したファイルの並べ替えに使用するメソッドです。</param>
+        <param name="SortOrder">省略可能な<see cref="T:Microsoft.Office.Core.MsoSortOrder" />。 取得したファイルが並べ替えられる順序。</param>
+        <param name="AlwaysAccurate">オプションの <b>Boolean</b>。 <b>True</b>を追加、変更、またはファイルの検索の一部として、ファイル ・ インデックスが最後に更新された後に削除されたファイルに含まれます。 既定値は <b>True</b> です。</param>
+        <summary>指定したファイルの検索を開始します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>このプロパティは、<b>整数値</b>を返します: 0 (0) のファイルが見つからない場合または 1 つまたは複数のファイルが見つかった場合は正の数です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ファイルの検索時に検索するファイルの名前を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
+          <para>ファイルの名前を含めることが、* (アスタリスク) またはしますか?(疑問符) のワイルドカード。疑問符のワイルドカードを使用して、任意の 1 文字に一致します。たとえば、"gray"と""します grey の両方に一致するように<b>gr?y</b>を入力します。任意の文字数に一致するのにアスタリスクのワイルドカードを使用します。たとえばを持つすべてのファイルを検索するのには<b>「*.txt」</b>と入力します。TXT 拡張子</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoFileType FileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoFileType FileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileType As MsoFileType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoFileType FileType { Microsoft::Office::Core::MsoFileType get(); void set(Microsoft::Office::Core::MsoFileType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、ファイルの検索時に検索するファイルの種類を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>定数<b>msoFileTypeOfficeFiles</b>には、次の拡張子のいずれかですべてのファイルが含まれています: * *.doc、*.xls、*、.ppt、*.pps、*.obd、*.mdb *.mpd、* .dot、*.xlt、* *.pot, *.obt, *.htm、または * .html。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileTypes FileTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FileTypes FileTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileTypes As FileTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FileTypes ^ FileTypes { Microsoft::Office::Core::FileTypes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.FileTypes" />コレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoundFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FoundFiles FoundFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FoundFiles FoundFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FoundFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FoundFiles As FoundFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FoundFiles ^ FoundFiles { Microsoft::Office::Core::FoundFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FoundFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.FoundFiles" /> 、検索中に見つかったすべてのファイルの名前を格納しているオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoLastModified LastModified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoLastModified LastModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModified As MsoLastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoLastModified LastModified { Microsoft::Office::Core::MsoLastModified get(); void set(Microsoft::Office::Core::MsoLastModified value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoLastModified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したファイルが最後に変更および保存するための時間を表す定数を設定または返します。</summary>
+        <value>既定値は、 <b>msoLastModifiedAnyTime</b>です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookIn">
+      <MemberSignature Language="C#" Value="public string LookIn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LookIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LookIn" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookIn As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LookIn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したファイルの検索時に検索するフォルダーを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAllWordForms">
+      <MemberSignature Language="C#" Value="public bool MatchAllWordForms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchAllWordForms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchAllWordForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchAllWordForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchAllWordForms { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>またはファイルのプロパティで、ファイルの本文に含まれる単語のすべての活用形も含めて、ファイル検索が展開されているかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。<b><para>このプロパティは Trueを返しますまたはファイルのプロパティで、ファイルの本文に含まれる単語のすべての活用形も含めて、ファイル検索が展開されている場合<b>False</b>検索が展開されていない場合です</para></b>。
+          <para>このプロパティは、Mswds_en.lex ファイルをインストールし、登録されている場合にのみ使用します。このファイルが標準的なセットアップの一部としてインストールされていないことに注意してください</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchTextExactly">
+      <MemberSignature Language="C#" Value="public bool MatchTextExactly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchTextExactly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchTextExactly" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchTextExactly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchTextExactly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>正確な単語または語句を指定したファイルのプロパティが含まれているか、指定したファイルが検索されますファイルのみが決定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。<b><para>このプロパティは Trueを返します、指定されたファイルが検索されますファイルだけが本文または正確な語句は指定したファイルのプロパティが含まれている場合<b>False</b>検索がより一般的な場合です</para></b>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSearch">
+      <MemberSignature Language="C#" Value="public void NewSearch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewSearch() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.NewSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NewSearch ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewSearch();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>すべての検索条件の設定を既定の設定にリセットします。</summary>
+        <remarks>
+          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
+          <para>検索条件の設定は、アプリケーション セッション全体で保持されます。検索条件を変更するたびにこのメソッドを使用します。このメソッドでは、値はリセットされませんが、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTests">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.PropertyTests PropertyTests { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.PropertyTests PropertyTests" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.PropertyTests" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyTests As PropertyTests" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PropertyTests ^ PropertyTests { Microsoft::Office::Core::PropertyTests ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.PropertyTests</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.PropertyTests" />の検索を行うファイルのすべての検索条件を表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshScopes">
+      <MemberSignature Language="C#" Value="public void RefreshScopes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshScopes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.RefreshScopes" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshScopes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshScopes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>現在利用可能な一覧を更新<see cref="T:Microsoft.Office.Core.ScopeFolder" />オブジェクトです。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchFolders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchFolders SearchFolders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchFolders SearchFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchFolders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchFolders As SearchFolders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchFolders ^ SearchFolders { Microsoft::Office::Core::SearchFolders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchFolders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.SearchFolders" />コレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchScopes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchScopes SearchScopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchScopes SearchScopes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchScopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchScopes As SearchScopes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchScopes ^ SearchScopes { Microsoft::Office::Core::SearchScopes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.SearchScopes" />コレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchSubFolders">
+      <MemberSignature Language="C#" Value="public bool SearchSubFolders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchSubFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchSubFolders" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchSubFolders As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchSubFolders { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したフォルダー内のすべてのサブフォルダーが検索に含まれて かどうかを決定する、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティ。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>検索で指定したフォルダー内のすべてのサブフォルダーが含まれる場合、このプロパティが<b>True</b>を返します、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティです。<b>False を指定</b>していない場合。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOrProperty">
+      <MemberSignature Language="C#" Value="public string TextOrProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextOrProperty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.TextOrProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextOrProperty As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextOrProperty { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ファイルの検索中にファイルの内容またはファイルのプロパティ] のいずれかで、検索する語句を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>単語または語句を含めることができます、* (アスタリスク) またはしますか?(疑問符) のワイルドカード文字です</para>。任意の 1 文字に一致する文字を
+          <para>疑問符のワイルドカードを使用します。入力""します grey または"gray"のいずれかの少なくとも 1 つのインスタンスが含まれているすべてのファイルを検索する<b>gr?y</b></para> 。任意の文字数に一致するワイルドカード文字を
+          <para>、アスタリスクを使用します。たとえば、「 <b>San *</b> 」San。「で始まる 1 つ以上の単語が含まれているすべてのファイルを取得する</para><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,348 @@
+<Type Name="OfficeDataSourceObject" FullName="Microsoft.Office.Core.OfficeDataSourceObject">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f7a7993dfa02a8e524fe1d5f38ac42df92252892" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661539" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OfficeDataSourceObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OfficeDataSourceObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.OfficeDataSourceObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OfficeDataSourceObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OfficeDataSourceObject" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C1530-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>差し込み印刷処理の差し込み印刷データ ソースを表します。</summary>
+    <remarks>
+      <para>
+        <b>OfficeDataSourceObject</b>オブジェクトを操作するには、 <b>OfficeDataSourceObject</b>オブジェクトとして変数をディメンションです。できますし、使用するさまざまなプロパティとメソッドがオブジェクトに関連付けられている</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Core.OfficeDataSourceObject.SetSortOrder(System.String,System.Boolean,System.String,System.Boolean,System.String,System.Boolean)" />をデータ ソース内のレコードを並べ替える方法を指定します。使用、 <see cref="P:Microsoft.Office.Core.ODSOFilter.Column" />、 <see cref="P:Microsoft.Office.Core.ODSOFilter.Comparison" />、 <see cref="P:Microsoft.Office.Core.ODSOFilter.CompareTo" />、および<see cref="P:Microsoft.Office.Core.ODSOFilter.Conjunction" />プロパティを取得またはデータ ソースのクエリ条件を設定します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyFilter">
+      <MemberSignature Language="C#" Value="public void ApplyFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyFilter() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.OfficeDataSourceObject.ApplyFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyFilter ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyFilter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>差し込み印刷データ ファイルにフィルターを適用し、指定したレコードから指定した条件を満たすレコードのみを抽出します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public object Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Columns { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.ODSOColumns" /> 、データ ソース内のフィールドを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectString">
+      <MemberSignature Language="C#" Value="public string ConnectString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.ConnectString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定された差し込み印刷データ ソースへの接続を表す<b>文字列</b>を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public string DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または添付されているデータ ソースの名前を表す<b>文字列</b>を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filters">
+      <MemberSignature Language="C#" Value="public object Filters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Filters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.Filters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filters As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Filters { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.FileDialogFilters" />コレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public int Move (Microsoft.Office.Core.MsoMoveRow MsoMoveRow, int RowNbr = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Move([in]valuetype Microsoft.Office.Core.MsoMoveRow MsoMoveRow, [in]int32 RowNbr) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.OfficeDataSourceObject.Move(Microsoft.Office.Core.MsoMoveRow,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743817)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="MsoMoveRow" Type="Microsoft.Office.Core.MsoMoveRow" />
+        <Parameter Name="RowNbr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="MsoMoveRow">必要な<see cref="T:Microsoft.Office.Core.MsoMoveRow" />。 フォーカスを取得する行。</param>
+        <param name="RowNbr">オプションの <b>Integer</b>。 フォーカスを取得する行の行番号。</param>
+        <summary>差し込み印刷データ ソースで指定した行にフォーカスを移動します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>このトピックの内容の一部をいくつかの言語には適用できないがあります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (string bstrSrc = &quot;&quot;, string bstrConnect = &quot;&quot;, string bstrTable = &quot;&quot;, int fOpenExclusive = 0, int fNeverPrompt = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]string bstrSrc, [in]string bstrConnect, [in]string bstrTable, [in]int32 fOpenExclusive, [in]int32 fNeverPrompt) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.OfficeDataSourceObject.Open(System.String,System.String,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (Optional bstrSrc As String = &quot;&quot;, Optional bstrConnect As String = &quot;&quot;, Optional bstrTable As String = &quot;&quot;, Optional fOpenExclusive As Integer = 0, Optional fNeverPrompt As Integer = 1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrSrc" Type="System.String" />
+        <Parameter Name="bstrConnect" Type="System.String" />
+        <Parameter Name="bstrTable" Type="System.String" />
+        <Parameter Name="fOpenExclusive" Type="System.Int32" />
+        <Parameter Name="fNeverPrompt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bstrSrc">省略可能な<b>文字列</b>です。 データ ソースの名前です。</param>
+        <param name="bstrConnect">省略可能な<b>文字列</b>です。 データ ソースへの接続文字列です。</param>
+        <param name="bstrTable">省略可能な<b>文字列</b>です。 データ ソース内のテーブルの名前。</param>
+        <param name="fOpenExclusive">オプションの <b>Integer</b>。 データ ソースが排他アクセスで開かれたかどうかを設定します。</param>
+        <param name="fNeverPrompt">オプションの <b>Integer</b>。 プロンプトが表示されるかどうかを設定します。</param>
+        <summary>差し込み印刷データ ソースへの接続を開きます。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowCount">
+      <MemberSignature Language="C#" Value="public int RowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.RowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したデータ ソース内のレコードの数を表す<b>整数</b>を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSortOrder">
+      <MemberSignature Language="C#" Value="public void SetSortOrder (string SortField1, bool SortAscending1 = false, string SortField2 = &quot;&quot;, bool SortAscending2 = false, string SortField3 = &quot;&quot;, bool SortAscending3 = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSortOrder([in]string SortField1, [in]bool SortAscending1, [in]string SortField2, [in]bool SortAscending2, [in]string SortField3, [in]bool SortAscending3) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.OfficeDataSourceObject.SetSortOrder(System.String,System.Boolean,System.String,System.Boolean,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSortOrder (SortField1 As String, Optional SortAscending1 As Boolean = false, Optional SortField2 As String = &quot;&quot;, Optional SortAscending2 As Boolean = false, Optional SortField3 As String = &quot;&quot;, Optional SortAscending3 As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743819)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SortField1" Type="System.String" />
+        <Parameter Name="SortAscending1" Type="System.Boolean" />
+        <Parameter Name="SortField2" Type="System.String" />
+        <Parameter Name="SortAscending2" Type="System.Boolean" />
+        <Parameter Name="SortField3" Type="System.String" />
+        <Parameter Name="SortAscending3" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="SortField1">
+          <b>文字列</b> が必要です。 差し込み印刷データの並べ替えを行う最初のフィールドを指定します。</param>
+        <param name="SortAscending1">オプションの <b>Boolean</b>。 <b>場合は true。</b>(既定値) に並べ替えを実行するのには<paramref name="SortField1" />です。<b>False</b>降順に実行する並べ替えします。</param>
+        <param name="SortField2">省略可能な<b>文字列</b>です。 差し込み印刷データの並べ替えを行う 2 番目のフィールドを指定します。 既定値は空の文字列です。</param>
+        <param name="SortAscending2">オプションの <b>Boolean</b>。 <b>場合は true。</b>(既定値) に並べ替えを実行するのには<paramref name="SortField2" />です。<b>False</b>降順に実行する並べ替えします。</param>
+        <param name="SortField3">省略可能な<b>文字列</b>です。 差し込み印刷データの並べ替えを行う 3 番目のフィールドを指定します。 既定値は空の文字列です。</param>
+        <param name="SortAscending3">オプションの <b>Boolean</b>。 <b>場合は true。</b>(既定値) に並べ替えを実行するのには<paramref name="SortField3" />です。<b>False</b>降順に実行する並べ替えします。</param>
+        <summary>差し込み印刷データの並べ替え順序を設定します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public string Table { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Table" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.OfficeDataSourceObject.Table" />
+      <MemberSignature Language="VB.NET" Value="Public Property Table As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Table { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ内のテーブル名を表す <b>文字列</b> を返しますは、差し込み印刷のレコードを含むファイルをソースします。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>返された値は、テーブル名が不明であるか、または現在のデータ ソースに適用されない場合は空白で可能性があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

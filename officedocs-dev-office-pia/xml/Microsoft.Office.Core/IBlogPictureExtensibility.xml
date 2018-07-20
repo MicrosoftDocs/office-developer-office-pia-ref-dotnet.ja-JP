@@ -1,0 +1,142 @@
+<Type Name="IBlogPictureExtensibility" FullName="Microsoft.Office.Core.IBlogPictureExtensibility">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a64edcdfc7bd03b46db1665de7ed6c161387ef95" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660782" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IBlogPictureExtensibility" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBlogPictureExtensibility" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IBlogPictureExtensibility" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBlogPictureExtensibility" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBlogPictureExtensibility" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03C5-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ブログの画像を操作する機能を提供するオブジェクトを表します。</summary>
+    <remarks>
+      <para>アカウントをセットアップして、ユーザーが画像のプロバイダーでは、画像が格納されます。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlogPictureProviderProperties">
+      <MemberSignature Language="C#" Value="public void BlogPictureProviderProperties (out string BlogPictureProvider, out string FriendlyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BlogPictureProviderProperties([out] string&amp; BlogPictureProvider, [out] string&amp; FriendlyName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.BlogPictureProviderProperties(System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BlogPictureProviderProperties (ByRef BlogPictureProvider As String, ByRef FriendlyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BlogPictureProviderProperties([Runtime::InteropServices::Out] System::String ^ % BlogPictureProvider, [Runtime::InteropServices::Out] System::String ^ % FriendlyName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BlogPictureProvider" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="FriendlyName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="BlogPictureProvider">画像プロバイダーの ID です。</param>
+        <param name="FriendlyName">画像プロバイダーのフレンドリ名です。</param>
+        <summary>画像のプロバイダーが、ブログ画像のアップロード場所として機能できるようにします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePictureAccount">
+      <MemberSignature Language="C#" Value="public void CreatePictureAccount (string Account, string BlogProvider, int ParentWindow, object Document);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreatePictureAccount([in]string Account, [in]string BlogProvider, [in]int32 ParentWindow, [in]object Document) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.CreatePictureAccount(System.String,System.String,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreatePictureAccount (Account As String, BlogProvider As String, ParentWindow As Integer, Document As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreatePictureAccount(System::String ^ Account, System::String ^ BlogProvider, int ParentWindow, System::Object ^ Document);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Account" Type="System.String" />
+        <Parameter Name="BlogProvider" Type="System.String" />
+        <Parameter Name="ParentWindow" Type="System.Int32" />
+        <Parameter Name="Document" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Account">アカウント レジストリ キーの GUID を表します。ブログ アカウントの設定は、\\HKCU\Software\Microsoft\Office\Common\Blog\Account のレジストリに格納されます。</param>
+        <param name="BlogProvider">プロバイダーの ID です。</param>
+        <param name="ParentWindow">呼び出しは、Microsoft Office Word のウィンドウの HWND が含まれています。</param>
+        <param name="Document">現在の文書。</param>
+        <summary>画像プロバイダーが、画像アカウントの設定を案内するのに必要なユーザー インターフェイスを、表示できるようにします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishPicture">
+      <MemberSignature Language="C#" Value="public void PublishPicture (string Account, int ParentWindow, object Document, object Image, out string PictureURI, int ImageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PublishPicture([in]string Account, [in]int32 ParentWindow, [in]object Document, [in]object Image, [out] string&amp; PictureURI, [in]int32 ImageType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.PublishPicture(System.String,System.Int32,System.Object,System.Object,System.String@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PublishPicture (Account As String, ParentWindow As Integer, Document As Object, Image As Object, ByRef PictureURI As String, ImageType As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PublishPicture(System::String ^ Account, int ParentWindow, System::Object ^ Document, System::Object ^ Image, [Runtime::InteropServices::Out] System::String ^ % PictureURI, int ImageType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Account" Type="System.String" />
+        <Parameter Name="ParentWindow" Type="System.Int32" />
+        <Parameter Name="Document" Type="System.Object" />
+        <Parameter Name="Image" Type="System.Object" />
+        <Parameter Name="PictureURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="ImageType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Account">アカウント レジストリ キーの GUID を表します。ブログ アカウントの設定は、\\HKCU\Software\Microsoft\Office\Common\Blog\Account のレジストリに格納されます。</param>
+        <param name="ParentWindow">呼び出しは、Microsoft Office Word のウィンドウの HWND が含まれています。</param>
+        <param name="Document">現在の文書。</param>
+        <param name="Image">イメージ ファイル名を表します。</param>
+        <param name="PictureURI">画像の URI です。</param>
+        <param name="ImageType">To be added.</param>
+        <summary>ブログ内の最終的な場所に画像オブジェクトを投稿するのに使います。</summary>
+        <remarks>
+          <para>このメソッドは、xHTML 生成中に呼び出され、渡します、します。画像の PNG 形式です。発行された場所には、xHTML 出力に IMG タグに追加されますが、返されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

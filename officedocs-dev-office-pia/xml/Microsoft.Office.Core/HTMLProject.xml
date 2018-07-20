@@ -1,0 +1,281 @@
+<Type Name="HTMLProject" FullName="Microsoft.Office.Core.HTMLProject">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ec7d666e324390126ac21b47a76f888f91244674" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661035" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface HTMLProject : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLProject implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.HTMLProject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface HTMLProject&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class HTMLProject : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0356-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Microsoft Script Editor の [プロジェクト エクスプ ローラーのように、トップレベルのプロジェクト分岐を表します。</summary>
+    <remarks>
+      <para>使用、<see cref="M:Microsoft.Office.Core.HTMLProject.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" />のメソッドの<see cref="T:Microsoft.Office.Core.HTMLProject" />オブジェクトを Microsoft Script Editor で HTML プロジェクトを開きます。ソース ビューまたは作業中の Microsoft Word 文書、Excel ブック、または PowerPoint プレゼンテーションのテキスト ビューでプロジェクトを開く</para>。使用の
+      <para>、 <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> HTML プロジェクトの<b>HTMLProjectItem</b>オブジェクトのコレクションを取得するプロパティです。使用して、 <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" /> 、ホスト アプリケーション内の HTML ドキュメントを更新する方法です。使用して、<see cref="M:Microsoft.Office.Core.HTMLProject.RefreshProject(System.Boolean)" />では、Microsoft Script Editor のプロジェクトを更新する方法です。使用して、 <see cref="P:Microsoft.Office.Core.HTMLProject.State" /> HTML プロジェクトを更新する必要があるかどうかを調べます</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.HTMLProject.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HTMLProjectItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.HTMLProjectItems HTMLProjectItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.HTMLProjectItems HTMLProjectItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.HTMLProjectItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HTMLProjectItems As HTMLProjectItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::HTMLProjectItems ^ HTMLProjectItems { Microsoft::Office::Core::HTMLProjectItems ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.HTMLProjectItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> 、指定した HTML プロジェクトに含まれているコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]valuetype Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (Optional OpenKind As MsoHTMLProjectOpen = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OpenKind" Type="Microsoft.Office.Core.MsoHTMLProjectOpen" />
+      </Parameters>
+      <Docs>
+        <param name="OpenKind">省略可能な<see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />。 指定したプロジェクトまたはプロジェクト項目が開かれているビューです。</param>
+        <summary>オプションのパラメーターで指定されたビューのいずれかの Microsoft スクリプト エディターで、指定した HTML プロジェクトや HTML プロジェクト アイテムを開きます<see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />定数。</summary>
+        <remarks>
+          <para>既定のビューでプロジェクト項目を開く、定数のいずれかが指定されていない場合です</para>。
+          <para>既定のビューは、かどうか、Microsoft スクリプト エディターが開いて、 <b>Open</b>メソッドの実行時に決定されます。スクリプト エディターが開いていない場合は、 <b>Open</b>メソッドは、ソース ビューで、スクリプト エディターを起動します。スクリプト エディターが既に開いている場合、 <b>Open</b>メソッドは、スクリプト エディターをアクティブにし、スクリプトを現在のビューに表示されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshDocument">
+      <MemberSignature Language="C#" Value="public void RefreshDocument (bool Refresh = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshDocument([in]bool Refresh) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshDocument (Optional Refresh As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Refresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Refresh">オプションの <b>Boolean</b>。 <b>True の</b>場合、すべての変更を保存できません。場合は<b>false</b>を無視するのには、すべての変更。</param>
+        <summary>Microsoft Office ホスト アプリケーションで指定した HTML プロジェクトを更新します。</summary>
+        <remarks>
+          <para>このメソッドの機能は、Office ホスト アプリケーションの [更新] ツールバーの [更新] ボタンをクリックすると同じです。<b>RefreshDocument</b>メソッドを<b>True</b>に設定してドキュメントを更新する場合は、Microsoft スクリプト エディターで、HTML ソースに対するすべての変更が Office ホスト アプリケーションに保存されます。<b>RefreshDocument</b>を<b>False</b>に設定すると、HTML のソースに対するすべての変更が無視されます</para>。によって値が返されることに注意を
+          <para>、<see cref="P:Microsoft.Office.Core.HTMLProject.State" />プロパティは、 <b>RefreshDocument</b>メソッドの影響を受けます。場合 RefreshDocument(True) を呼び出すと、<b>状態</b>が返されます<b>msoHTMLProjectStateDocumentProjectUnlocked</b>場合は更新操作後に呼び出されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshProject">
+      <MemberSignature Language="C#" Value="public void RefreshProject (bool Refresh = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshProject([in]bool Refresh) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.RefreshProject(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshProject (Optional Refresh As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Refresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Refresh">オプションの <b>Boolean</b>。 <b>True の</b>場合は、ドキュメントが更新されます。<b>False</b>場合は、ドキュメントは更新されません。</param>
+        <summary>Microsoft Script Editor で指定した HTML プロジェクトを更新します。</summary>
+        <remarks>
+          <para>このメソッドの機能は、Microsoft Script Editor の [更新] ツールバーの [更新] ボタンをクリックすると同じです。設定してドキュメントを更新する場合は、<see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" />に<b>は True</b>、Office ホスト アプリケーションで HTML のソースに対するすべての変更が Microsoft Script Editor で HTML プロジェクトに保存されます。<b>RefreshDocument</b>を<b>False</b>に設定すると、HTML のソースに対するすべての変更が無視されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoHTMLProjectState this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoHTMLProjectState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.State" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property State As MsoHTMLProjectState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHTMLProjectState default { Microsoft::Office::Core::MsoHTMLProjectState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoHTMLProjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在の状態を取得、<see cref="T:Microsoft.Office.Core.HTMLProject" />オブジェクトです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

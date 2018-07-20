@@ -1,0 +1,239 @@
+<Type Name="SmartDocument" FullName="Microsoft.Office.Core.SmartDocument">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f1baad263eb43139b77bb1be53d230555de79afc" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661056" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SmartDocument : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartDocument implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SmartDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SmartDocument&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SmartDocument : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0377-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Microsoft Office Word 2003 の<b>ドキュメント</b>オブジェクトと、Microsoft Office Excel 2003<b>ブック</b>オブジェクトの<b>SmartDocument</b>プロパティは、 <b>SmartDocument</b>オブジェクトを返します。</summary>
+    <remarks>
+      <para>作業中の文書に XML 拡張パックを管理するのには、 <b>SmartDocument</b>オブジェクトが接続されているを使用します</para>。
+      <para>使用<b>SmartDocument</b>オブジェクトの<see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" />と<see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" />、作業中の文書またはブックに XML 拡張パックの情報を取得するプロパティが関連付けられています。使用して、<see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" />ユーザーが作業中の文書またはブックに添付するためのリストから使用可能な XML 拡張パックを選択できるようにするメソッドです。使用して、 <see cref="M:Microsoft.Office.Core.SmartDocument.RefreshPane" /> 、スマート ドキュメントの [ドキュメント アクション] 作業ウィンドウを更新する方法です</para>。ドキュメントには、XML 拡張パックが接続されているかどうか
+      <para><b>SmartDocument</b>オブジェクト モデルがあります。<b>文書</b>または<b>ブック</b>のオブジェクトの<b>SmartDocument</b>プロパティを返しません何も作業中の文書に XML 拡張パックが添付されていない場合。作業中の文書に添付された XML 拡張パックがあるかどうかを判断するのには、 <b>SolutionID</b>プロパティを確認します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.SmartDocument.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickSolution">
+      <MemberSignature Language="C#" Value="public void PickSolution (bool ConsiderAllSchemas = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PickSolution([in]bool ConsiderAllSchemas) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PickSolution (Optional ConsiderAllSchemas As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ConsiderAllSchemas" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ConsiderAllSchemas">オプションの <b>Boolean</b>。 <b>True を指定</b> すると、ユーザーのコンピューターにインストールされているすべての利用可能な XML 拡張パックが表示されます。 <b>False を指定</b> すると、作業中の文書に適用できる XML 拡張パックのみが表示されます。 既定値は、 <b>false を指定</b> します。</param>
+        <summary>ユーザーが作業中の Microsoft Office Word 2003 文書または Microsoft Office Excel 2003 ブックに添付する利用可能な XML 拡張パックを選択するダイアログ ボックスが表示されます。</summary>
+        <remarks>
+          <para>
+            <b>PickSolution</b>メソッドを使用して、ユーザーが XML 拡張パックを一覧から選択できるようにします。作業中の文書またはブックに添付されたスキーマでは、どの XML 拡張パックが適用されますを決定します</para>。
+          <para><b>PickSolution</b>メソッドは、ユーザーが XML 拡張パックを選択したか、ダイアログ ボックスで [キャンセル] をクリックしたかどうかを示す値を返しません。チェック、<see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" />プロパティを呼び出すと、XML 拡張パックが添付されているかどうかを判断するのには、 <b>PickSolution</b></para> 。スマート ドキュメントの開発者が XML 拡張パック マニフェスト ファイルに"targetApplication"を指定するのに失敗した場合は、 
+          <para>、 <b>PickSolution</b>によって表示される一覧は、作業中のアプリケーションを対象としない XML 拡張パックを含めることがなど、Excel ユーザーは、Word にのみ対象として、XML 拡張パックを参照してください可能性があります。ユーザーはこれらの状況では、XML 拡張パックが作業中のアプリケーションの不適切なを選択する可能性があります</para>。
+          <para>スマート ドキュメントまたはスマート ドキュメントに XML 拡張パックの詳細についてを参照してください、スマート ドキュメント ソフトウェア開発キット (SDK)、Microsoft Developer Network (MSDN) Web サイトにします</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshPane">
+      <MemberSignature Language="C#" Value="public void RefreshPane ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshPane() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SmartDocument.RefreshPane" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshPane ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshPane();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>作業中の Microsoft Office Word 2003 文書または Microsoft Office Excel 2003 ブックの [ドキュメント アクション] 作業ウィンドウを更新します。</summary>
+        <remarks>
+          <para>
+            <b>RefreshPane</b>メソッドでは、作業中の文書に添付された XML 拡張パックがない場合にエラーが発生します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SolutionID">
+      <MemberSignature Language="C#" Value="public string SolutionID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SolutionID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.SolutionID" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または設定、ID では、多くの場合、グローバル一意識別子 (GUID)、作業中の Microsoft Office Word 2003 文書または Microsoft Office Excel 2003 ブックに添付された XML 拡張パックを識別します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>SolutionID</b>プロパティを返します空の文字列または"None"作業中の文書に XML 拡張パックが関連付けられていない場合です</para>。<b>SolutionID</b>適切な値を提供することを
+          <para>と<see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" />を使用せず、スマート ドキュメントに変換するのには、作業中の文書をパックの利用可能な XML 拡張をアタッチするプロパティ、<see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" />メソッドです。添付された XML 拡張パックを削除するのには空の文字列に、 <b>SolutionID</b>プロパティと<b>SolutionURL</b>プロパティを設定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SolutionURL">
+      <MemberSignature Language="C#" Value="public string SolutionURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SolutionURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.SolutionURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の Microsoft Office Word 2003 文書または Microsoft Office Excel 2003 ブックに添付された XML 拡張パックのファイルへの完全パスを提供する絶対 URL を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>SolutionURL</b>プロパティは、アクティブ ドキュメントに XML 拡張パックが関連付けられていない場合に空の文字列を返します</para>。
+          <para>、 <b>SolutionID</b>プロパティと<b>SolutionURL</b>プロパティを接続に使用可能な XML 拡張の適切な値を指定では、作業中の文書をパックして、<b>スマート ドキュメントに変換すること</b>。添付された XML 拡張パックを削除するのには空の文字列に、 <b>SolutionID</b>プロパティと<b>SolutionURL</b>プロパティの設定</para><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

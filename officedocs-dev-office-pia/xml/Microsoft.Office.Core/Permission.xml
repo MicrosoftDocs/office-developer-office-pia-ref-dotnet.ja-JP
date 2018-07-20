@@ -1,0 +1,613 @@
+<Type Name="Permission" FullName="Microsoft.Office.Core.Permission">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="fe6f3a417ebde79f8d262a5f2265cdc32d2f7d2c" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661542" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Permission : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Permission implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Permission" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Permission&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Permission : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0376-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>作業中の文書へのアクセス許可を制限し、特定のアクセス許可の設定を取得または <b>アクセス許可</b> オブジェクトを使用します。</summary>
+    <remarks>
+      <para>Microsoft Office Word 2003<b>ドキュメント</b>オブジェクト、Microsoft Office Excel 2003<b>ブック</b>のオブジェクト、および Microsoft Office PowerPoint 2003<b>プレゼンテーション</b>オブジェクトの<b>アクセス許可</b>のプロパティの<b>アクセス許可</b>を返します。オブジェクト</para>。使用の
+      <para>、 <see cref="P:Microsoft.Office.Core.Permission.Enabled" /> 、アクティブ ドキュメントに対する権限が制限されているかどうかを確認するにします。使用、<see cref="P:Microsoft.Office.Core.Permission.Count" />権限を持つユーザーの数を返すプロパティと、<see cref="M:Microsoft.Office.Core.Permission.RemoveAll" />すべての既存のアクセス許可をリセットするメソッドです</para>。
+      <para>、 <see cref="P:Microsoft.Office.Core.Permission.DocumentAuthor" />、 <see cref="P:Microsoft.Office.Core.Permission.EnableTrustedBrowser" />、 <see cref="P:Microsoft.Office.Core.Permission.RequestPermissionURL" />、および<see cref="P:Microsoft.Office.Core.Permission.StoreLicenses" />のプロパティは、アクセス許可の設定に関する追加情報を提供します</para>。
+      <para><b>アクセス許可</b>オブジェクトのコレクションにアクセス<see cref="T:Microsoft.Office.Core.UserPermission" />オブジェクトです。<b>UserPermission</b>オブジェクトを使用すると、個々 のユーザーに特定の権限のセットを関連付けます。<b>UserPermission</b>オブジェクトを使用して、ユーザーごとの有効期限の日付をユーザーごとに割り当てることができます ( <b>msoPermissionPrint</b>) などのユーザー インターフェイスを通して付与されるアクセス権の一部は、すべてのユーザーに適用するときにします</para>。
+      <para>の情報著作権管理の Microsoft Office には、ユーザーとグループ、およびそのドキュメント アクセス許可の一覧を表示する管理アクセス許可ポリシーの使用がサポートされています。使用、<see cref="M:Microsoft.Office.Core.Permission.ApplyPolicy(System.String)" />のアクセス許可ポリシーを適用する方法と、 <see cref="P:Microsoft.Office.Core.Permission.PermissionFromPolicy" />、 <see cref="P:Microsoft.Office.Core.Permission.PolicyName" />、および<see cref="P:Microsoft.Office.Core.Permission.PolicyDescription" />ポリシー情報を取得するプロパティ</para>。
+      <para><b>アクセス許可</b>オブジェクト モデルは、アクティブ ドキュメントに対するアクセス許可が制限されているかどうかに関係なく使用できます。<b>ドキュメント</b>、<b>ブック</b>、および<b>プレゼンテーション</b>のオブジェクトの<b>アクセス許可</b>プロパティを返しません<b>何も</b>作業中の文書は制限されたアクセス許可を持っていない場合。ドキュメントにアクセス許可が制限されているかどうかを判断するのには、 <b>Enabled</b>プロパティを使用します</para>。
+      <para>Windows 権限の管理クライアントがインストールされていない場合、<b>アクセス許可</b>オブジェクトを使用して、エラーが発生します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.UserPermission Add (string UserId, object Permission, object ExpirationDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.UserPermission Add([in]string UserId, [in]object Permission, [in]object ExpirationDate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.Add(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (UserId As String, Optional Permission As Object, Optional ExpirationDate As Object) As UserPermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.UserPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="UserId" Type="System.String" />
+        <Parameter Name="Permission" Type="System.Object" />
+        <Parameter Name="ExpirationDate" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="UserId">省略可能な<b>オブジェクト</b>です。 電子メール アドレス (形式で<paramref name="user@domain.com" />)、アクティブ ドキュメントに対するアクセス許可が与えられる対象のユーザーのです。</param>
+        <param name="Permission">省略可能な<b>文字列</b>です。 ユーザーに与えるアクティブ ドキュメントに対する許可を指定します。</param>
+        <param name="ExpirationDate">
+          <b>文字列</b> が必要です。 付与されるアクセス許可の有効期限。注意このパラメーターは実行されていないため、無視されます。</param>
+        <summary>指定したユーザーの作業中の文書に新しいアクセス許可のセットを作成します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyPolicy">
+      <MemberSignature Language="C#" Value="public void ApplyPolicy (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyPolicy([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.ApplyPolicy(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyPolicy (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyPolicy(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>文字列</b> が必要です。 アクセス許可ポリシーのテンプレート ファイルのパスとファイル名を指定します。</param>
+        <summary>指定したアクセス許可ポリシーをアクティブ ドキュメントに適用します。</summary>
+        <remarks>
+          <para>情報権利管理の Microsoft Office には、ユーザーとグループ、およびそのドキュメント アクセス許可の一覧を表示する管理アクセス許可ポリシーの使用がサポートされています。<b>ApplyPolicy</b>メソッドには、作業中の文書にアクセス許可ポリシーが適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したコレクション内の項目の数を示す<b>整数</b>を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>アクティブ ドキュメントに対するアクセス許可が有効にしない場合は、0 (ゼロ) を返します。アクセス許可を有効にすると、 <b>Count</b>プロパティは、ドキュメントの作成者のアクセス許可を表す 1 以上を常に返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.Permission.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentAuthor">
+      <MemberSignature Language="C#" Value="public string DocumentAuthor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DocumentAuthor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.DocumentAuthor" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentAuthor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentAuthor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または作業中の文書の作成者の電子メール フォームの名前を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>DocumentAuthor</b>プロパティを取得または作業中の文書の作成者を設定します。作成者は、ドキュメントに対する所有者の権利を無期限を常に、所有者のアクセス許可が明示的に付与するかどうか (を通じて、<see cref="T:Microsoft.Office.Core.UserPermission" />オブジェクト) か</para>。
+          <para><b>DocumentAuthor</b>プロパティは、ローカル コンピューターで制限付きコンテンツを開くアクセス許可のユーザー インターフェイスを通じて証明されている別のアカウントにのみ変更できます。ほとんどの場合、1 つの Windows アカウントを持つユーザーのみを選択できます、Windows と Passport アイデンティティとの間です</para>。
+          <para>ユーザーの Microsoft Windows および Passport id は、同じ電子メール アドレスを使用する場合は、形式の passport:someone@example.com を使用して、 <b>DocumentAuthor</b>プロパティとして Passport id を指定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、作業中の文書にアクセス許可が有効かどうかを示す<b>ブール</b>値を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>作業中の文書では、権限が制限されているかどうかを確認を有効にするまたはアクセス許可を無効にするには、 <b>Enabled</b>プロパティを使用します。<b>Enabled</b>プロパティに<b>false を指定</b>のアクセス許可を無効にして、ドキュメントの作成者とそのアクセス許可以外のすべてのユーザーを削除するのに設定します</para>。
+          <para>アクセス許可が無効にすると、<see cref="P:Microsoft.Office.Core.Permission.Count" />のプロパティ、<see cref="T:Microsoft.Office.Core.Permission" />オブジェクトを返します 0 (ゼロ) です。 ただし、アクセス許可が再度有効にすると、ドキュメントの作成者のアクセス許可はそのままです。</para> 。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTrustedBrowser">
+      <MemberSignature Language="C#" Value="public bool EnableTrustedBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableTrustedBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.EnableTrustedBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableTrustedBrowser As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableTrustedBrowser { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ユーザーに適切なクライアント アプリケーションがインストールされていない場合、web ブラウザーで制限されたアクセス許可を持つドキュメントを表示するのにはユーザーに許可するオプションを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>既定の戻り値は<b>false を指定</b>します</para>。
+          <para><b>EnableTrustedBrowser</b>プロパティは、制限されたアクセス許可、たとえば、Office Word 2003 の文書を開くしようとしたユーザーに許可する<b>場合は True</b>しない人が Office Word 2003 アプリケーションがインストールされている、内のドキュメントを表示するのにはMicrosoft Internet Explorer または他のブラウザーがこの機能をサポートします。このプロパティは、情報権利管理をサポートしているブラウザーで閲覧するのには Office の以前のバージョンを持つユーザーを許可する] チェック ボックスに対応します。(ファイルサイズが大きくなります。)ユーザー インターフェイスにします</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.UserPermission this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.UserPermission Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As UserPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::UserPermission ^ default[System::Object ^] { Microsoft::Office::Core::UserPermission ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.UserPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">省略可能な<b>オブジェクト</b>です。 <b>アクセス許可</b>のコレクション、または作業中の文書に対するアクセス許可のセットが返されるユーザーの電子メール アドレスで、 <b>UserPermission</b>の数値インデックス。</param>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.UserPermission" />のメンバーである、<see cref="T:Microsoft.Office.Core.Permission" />コレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>UserPermission</b>オブジェクトは、アクティブ ドキュメントに対するアクセス許可のセットで 1 人のユーザーおよびオプションの有効期限の日付。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionFromPolicy">
+      <MemberSignature Language="C#" Value="public bool PermissionFromPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PermissionFromPolicy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PermissionFromPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionFromPolicy As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PermissionFromPolicy { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の文書にアクセス許可ポリシーが適用されているかどうかを示す<b>ブール</b>値を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Office 2003年の情報権利管理は、ユーザーとグループ、およびそのドキュメント アクセス許可の一覧を表示する管理アクセス許可ポリシーの使用をサポートします。<b>管理</b>は、最終アクセス許可のドキュメントで作業中の文書にアクセス許可ポリシーが適用されたかどうかを示す<b>ブール</b>値を返します</para>。
+          <para><b>管理</b>が常に<b>False</b>所有者以外が、ドキュメントのオブジェクト モデルのアクセス許可がある場合にもオンにした場合を返します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyDescription">
+      <MemberSignature Language="C#" Value="public string PolicyDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PolicyDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PolicyDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PolicyDescription { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の文書に適用されるアクセス許可ポリシーの説明を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>情報権利管理の Microsoft Office には、ユーザーとグループ、およびそのドキュメント アクセス許可の一覧を表示する管理アクセス許可ポリシーの使用がサポートされています。<b>許可</b>は、ポリシーが使用できない場合は、作業中の文書、または既定値に適用されるポリシーの説明を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyName">
+      <MemberSignature Language="C#" Value="public string PolicyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PolicyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PolicyName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の文書に適用されるアクセス許可ポリシーの名前を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>情報権利管理の Microsoft Office には、ユーザーとグループ、およびそのドキュメント アクセス許可の一覧を表示する管理アクセス許可ポリシーの使用がサポートされています。<b>グループ</b>のプロパティは、ポリシーが使用できない場合は、作業中の文書、または既定値に適用されるポリシーの名前を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="public void RemoveAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>すべて削除<see cref="T:Microsoft.Office.Core.UserPermission" />オブジェクトから、<see cref="T:Microsoft.Office.Core.Permission" />作業中の文書の制限を無効に、作業中の文書のコレクション。</summary>
+        <remarks>
+          <para>
+            <b>RemoveAll</b>メソッドを呼び出した後、<see cref="P:Microsoft.Office.Core.Permission.Enabled" />のプロパティの<see cref="T:Microsoft.Office.Core.Permission" />オブジェクトが<b>False</b>を返しますと、<see cref="P:Microsoft.Office.Core.Permission.Count" />プロパティが 0 (ゼロ) を返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPermissionURL">
+      <MemberSignature Language="C#" Value="public string RequestPermissionURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestPermissionURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.RequestPermissionURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestPermissionURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPermissionURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ファイルまたは web サイトの URL を参照してください、または作業中の文書に追加のアクセス許可を必要としているユーザーに連絡する電子メール アドレスを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>RequestPermissionURL</b>設定に対応してユーザーがアクセス許可のユーザー インターフェイスのオプションから追加のアクセス許可を要求できます。<b>RequestPermissionURL</b>プロパティを使用して、ファイル、web サイト、またはユーザー要求、またはを要求する、作業中の文書に追加のアクセス許可などの方法を説明する元の電子メール連絡先:</para>
+          <list type="bullet">
+            <item>
+              <para>web アドレス: http://companyserver/request_permissions.asp </para>
+            </item>
+            <item>
+              <para>Aファイル: \\companyserver\share\requesting_permissions.txt</para>
+            </item>
+            <item>
+              <para>e メール アドレス: mailto:permissionsmgr@example.com?Subject=Request%20permissions</para>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreLicenses">
+      <MemberSignature Language="C#" Value="public bool StoreLicenses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StoreLicenses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.StoreLicenses" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreLicenses As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StoreLicenses { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中の文書を表示するのにはユーザーのライセンスをユーザーがアクセス権の管理サーバーに接続できないときにオフラインで表示できるようにするのにはキャッシュかどうかを示す<b>ブール</b>値を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>既定の戻り値は<b>true を指定</b>します</para>。
+          <para><b>StoreLicenses</b>プロパティに対応などの反対の値が、アクセス許可のユーザー インターフェイスでユーザーのアクセス許可のオプションを確認する接続を必要とします。ドキュメントの所有者以外のユーザーが権限管理サーバーに接続する必要があり、それを開くたびにこのドキュメントを使用するライセンスを取得する<b>StoreLicenses</b>が<b>False</b>の場合は、</para><para>コンテンツを保護するには、Microsoft Office 2003年の情報権利管理サービスを使用して、 <b>StoreLicenses</b>プロパティは常に<b>True</b>と False に設定することはできません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
