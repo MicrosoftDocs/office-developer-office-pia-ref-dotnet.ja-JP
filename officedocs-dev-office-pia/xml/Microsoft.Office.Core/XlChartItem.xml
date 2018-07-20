@@ -1,0 +1,938 @@
+<Type Name="XlChartItem" FullName="Microsoft.Office.Core.XlChartItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="baef3ff7569009e12e8d19fd36e16012cfc7dff3" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661171" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum XlChartItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlChartItem extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.XlChartItem" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XlChartItem" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XlChartItem" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d947e-101">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d947e-101">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+      </span>
+      <span data-ttu-id="d947e-102">グラフ項目の種類を指定します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d947e-102">Specifies the type of the chart item.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="xlAxis">
+      <MemberSignature Language="C#" Value="xlAxis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlAxis = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlAxis" />
+      <MemberSignature Language="VB.NET" Value="xlAxis" />
+      <MemberSignature Language="C++ CLI" Value="xlAxis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-103">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-103">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-104">軸</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-104">Axis.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlAxisTitle">
+      <MemberSignature Language="C#" Value="xlAxisTitle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlAxisTitle = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlAxisTitle" />
+      <MemberSignature Language="VB.NET" Value="xlAxisTitle" />
+      <MemberSignature Language="C++ CLI" Value="xlAxisTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-105">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-105">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-106">軸ラベル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-106">Axis title.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlChartArea">
+      <MemberSignature Language="C#" Value="xlChartArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlChartArea = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlChartArea" />
+      <MemberSignature Language="VB.NET" Value="xlChartArea" />
+      <MemberSignature Language="C++ CLI" Value="xlChartArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-107">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-107">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-108">グラフ エリア</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-108">Chart area.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlChartTitle">
+      <MemberSignature Language="C#" Value="xlChartTitle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlChartTitle = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlChartTitle" />
+      <MemberSignature Language="VB.NET" Value="xlChartTitle" />
+      <MemberSignature Language="C++ CLI" Value="xlChartTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-109">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-109">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-110">グラフ タイトル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-110">Chart title.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlCorners">
+      <MemberSignature Language="C#" Value="xlCorners" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlCorners = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlCorners" />
+      <MemberSignature Language="VB.NET" Value="xlCorners" />
+      <MemberSignature Language="C++ CLI" Value="xlCorners" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-111">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-111">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-112">丸み</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-112">Corners.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlDataLabel">
+      <MemberSignature Language="C#" Value="xlDataLabel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlDataLabel = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlDataLabel" />
+      <MemberSignature Language="VB.NET" Value="xlDataLabel" />
+      <MemberSignature Language="C++ CLI" Value="xlDataLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-113">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-113">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-114">データ ラベル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-114">Data label.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlDataTable">
+      <MemberSignature Language="C#" Value="xlDataTable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlDataTable = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlDataTable" />
+      <MemberSignature Language="VB.NET" Value="xlDataTable" />
+      <MemberSignature Language="C++ CLI" Value="xlDataTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-115">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-115">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-116">データ テーブル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-116">Data table.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlDisplayUnitLabel">
+      <MemberSignature Language="C#" Value="xlDisplayUnitLabel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlDisplayUnitLabel = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlDisplayUnitLabel" />
+      <MemberSignature Language="VB.NET" Value="xlDisplayUnitLabel" />
+      <MemberSignature Language="C++ CLI" Value="xlDisplayUnitLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-117">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-117">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-118">表示単位ラベル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-118">Display unit label.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlDownBars">
+      <MemberSignature Language="C#" Value="xlDownBars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlDownBars = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlDownBars" />
+      <MemberSignature Language="VB.NET" Value="xlDownBars" />
+      <MemberSignature Language="C++ CLI" Value="xlDownBars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-119">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-119">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-120">陰線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-120">Down bars.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlDropLines">
+      <MemberSignature Language="C#" Value="xlDropLines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlDropLines = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlDropLines" />
+      <MemberSignature Language="VB.NET" Value="xlDropLines" />
+      <MemberSignature Language="C++ CLI" Value="xlDropLines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-121">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-121">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-122">降下線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-122">Drop lines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlErrorBars">
+      <MemberSignature Language="C#" Value="xlErrorBars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlErrorBars = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlErrorBars" />
+      <MemberSignature Language="VB.NET" Value="xlErrorBars" />
+      <MemberSignature Language="C++ CLI" Value="xlErrorBars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-123">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-123">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-124">誤差範囲</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-124">Error bars.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFloor">
+      <MemberSignature Language="C#" Value="xlFloor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlFloor = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlFloor" />
+      <MemberSignature Language="VB.NET" Value="xlFloor" />
+      <MemberSignature Language="C++ CLI" Value="xlFloor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-125">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-125">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-126">床面</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-126">Floor.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlHiLoLines">
+      <MemberSignature Language="C#" Value="xlHiLoLines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlHiLoLines = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlHiLoLines" />
+      <MemberSignature Language="VB.NET" Value="xlHiLoLines" />
+      <MemberSignature Language="C++ CLI" Value="xlHiLoLines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-127">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-127">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-128">高低線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-128">HiLo lines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlLeaderLines">
+      <MemberSignature Language="C#" Value="xlLeaderLines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlLeaderLines = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlLeaderLines" />
+      <MemberSignature Language="VB.NET" Value="xlLeaderLines" />
+      <MemberSignature Language="C++ CLI" Value="xlLeaderLines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-129">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-129">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-130">引き出し線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-130">Leader lines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlLegend">
+      <MemberSignature Language="C#" Value="xlLegend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlLegend = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlLegend" />
+      <MemberSignature Language="VB.NET" Value="xlLegend" />
+      <MemberSignature Language="C++ CLI" Value="xlLegend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-131">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-131">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-132">凡例</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-132">Legend.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlLegendEntry">
+      <MemberSignature Language="C#" Value="xlLegendEntry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlLegendEntry = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlLegendEntry" />
+      <MemberSignature Language="VB.NET" Value="xlLegendEntry" />
+      <MemberSignature Language="C++ CLI" Value="xlLegendEntry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-133">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-133">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-134">凡例文字列</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-134">Legend entry.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlLegendKey">
+      <MemberSignature Language="C#" Value="xlLegendKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlLegendKey = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlLegendKey" />
+      <MemberSignature Language="VB.NET" Value="xlLegendKey" />
+      <MemberSignature Language="C++ CLI" Value="xlLegendKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-135">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-135">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-136">凡例マーカー</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-136">Legend key.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlMajorGridlines">
+      <MemberSignature Language="C#" Value="xlMajorGridlines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlMajorGridlines = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlMajorGridlines" />
+      <MemberSignature Language="VB.NET" Value="xlMajorGridlines" />
+      <MemberSignature Language="C++ CLI" Value="xlMajorGridlines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-137">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-137">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-138">目盛線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-138">Major gridlines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlMinorGridlines">
+      <MemberSignature Language="C#" Value="xlMinorGridlines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlMinorGridlines = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlMinorGridlines" />
+      <MemberSignature Language="VB.NET" Value="xlMinorGridlines" />
+      <MemberSignature Language="C++ CLI" Value="xlMinorGridlines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-139">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-139">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-140">補助目盛り線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-140">Minor gridlines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlNothing">
+      <MemberSignature Language="C#" Value="xlNothing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlNothing = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlNothing" />
+      <MemberSignature Language="VB.NET" Value="xlNothing" />
+      <MemberSignature Language="C++ CLI" Value="xlNothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-141">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-141">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-142">なし</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-142">Nothing.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlPivotChartDropZone">
+      <MemberSignature Language="C#" Value="xlPivotChartDropZone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlPivotChartDropZone = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlPivotChartDropZone" />
+      <MemberSignature Language="VB.NET" Value="xlPivotChartDropZone" />
+      <MemberSignature Language="C++ CLI" Value="xlPivotChartDropZone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-143">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-143">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-144">ピボットグラフ ドロップ エリア</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-144">PivotChart drop zone.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlPivotChartFieldButton">
+      <MemberSignature Language="C#" Value="xlPivotChartFieldButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlPivotChartFieldButton = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlPivotChartFieldButton" />
+      <MemberSignature Language="VB.NET" Value="xlPivotChartFieldButton" />
+      <MemberSignature Language="C++ CLI" Value="xlPivotChartFieldButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-145">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-145">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-146">ピボットグラフ フィールド ボタン</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-146">PivotChart field button.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlPlotArea">
+      <MemberSignature Language="C#" Value="xlPlotArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlPlotArea = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlPlotArea" />
+      <MemberSignature Language="VB.NET" Value="xlPlotArea" />
+      <MemberSignature Language="C++ CLI" Value="xlPlotArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-147">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-147">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-148">プロット エリア</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-148">Plot area.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlRadarAxisLabels">
+      <MemberSignature Language="C#" Value="xlRadarAxisLabels" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlRadarAxisLabels = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlRadarAxisLabels" />
+      <MemberSignature Language="VB.NET" Value="xlRadarAxisLabels" />
+      <MemberSignature Language="C++ CLI" Value="xlRadarAxisLabels" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-149">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-149">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-150">レーダー軸ラベル</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-150">Radar axis labels.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlSeries">
+      <MemberSignature Language="C#" Value="xlSeries" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlSeries = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlSeries" />
+      <MemberSignature Language="VB.NET" Value="xlSeries" />
+      <MemberSignature Language="C++ CLI" Value="xlSeries" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-151">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-151">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-152">系列</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-152">Series.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlSeriesLines">
+      <MemberSignature Language="C#" Value="xlSeriesLines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlSeriesLines = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlSeriesLines" />
+      <MemberSignature Language="VB.NET" Value="xlSeriesLines" />
+      <MemberSignature Language="C++ CLI" Value="xlSeriesLines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-153">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-153">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-154">区分線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-154">Series lines.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlShape">
+      <MemberSignature Language="C#" Value="xlShape" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlShape = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlShape" />
+      <MemberSignature Language="VB.NET" Value="xlShape" />
+      <MemberSignature Language="C++ CLI" Value="xlShape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-155">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-155">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-156">図形</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-156">Shape.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlTrendline">
+      <MemberSignature Language="C#" Value="xlTrendline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlTrendline = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlTrendline" />
+      <MemberSignature Language="VB.NET" Value="xlTrendline" />
+      <MemberSignature Language="C++ CLI" Value="xlTrendline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-157">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-157">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-158">近似曲線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-158">Trend line.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlUpBars">
+      <MemberSignature Language="C#" Value="xlUpBars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlUpBars = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlUpBars" />
+      <MemberSignature Language="VB.NET" Value="xlUpBars" />
+      <MemberSignature Language="C++ CLI" Value="xlUpBars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-159">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-159">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-160">陽線</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-160">Up bars.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlWalls">
+      <MemberSignature Language="C#" Value="xlWalls" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlWalls = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlWalls" />
+      <MemberSignature Language="VB.NET" Value="xlWalls" />
+      <MemberSignature Language="C++ CLI" Value="xlWalls" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-161">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-161">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-162">壁面</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-162">Walls.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlXErrorBars">
+      <MemberSignature Language="C#" Value="xlXErrorBars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlXErrorBars = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlXErrorBars" />
+      <MemberSignature Language="VB.NET" Value="xlXErrorBars" />
+      <MemberSignature Language="C++ CLI" Value="xlXErrorBars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-163">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-163">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-164">X 誤差範囲</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-164">X error bars.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlYErrorBars">
+      <MemberSignature Language="C#" Value="xlYErrorBars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.XlChartItem xlYErrorBars = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.XlChartItem.xlYErrorBars" />
+      <MemberSignature Language="VB.NET" Value="xlYErrorBars" />
+      <MemberSignature Language="C++ CLI" Value="xlYErrorBars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartItem</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d947e-165">Excel プライマリ相互運用機能アセンブリ (PIA) からこの列挙体にアクセスし、使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-165">You should access and use this enumeration from the Excel primary interop assembly (PIA).</span>
+          </span>
+          <span data-ttu-id="d947e-166">Y 誤差範囲</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d947e-166">Y error bars.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
