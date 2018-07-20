@@ -1,0 +1,78 @@
+<Type Name="_CommandBarsEvents_Event" FullName="Microsoft.Office.Core._CommandBarsEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="da9a1e0e9ffe20ebb4f6997e2201eab06348b5ec" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661589" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CommandBarsEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CommandBarsEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CommandBarsEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CommandBarsEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CommandBarsEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Core._CommandBarsEvents), typeof(Microsoft.Office.Core._CommandBarsEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="dbcf5-101">イベントは、Microsoft Office のインターフェイス<see cref="T:Microsoft.Office.Core.CommandBars" />オブジェクトのイベント。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="dbcf5-101">Events interface for Microsoft Office <see cref="T:Microsoft.Office.Core.CommandBars" /> object events.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler OnUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler OnUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Core._CommandBarsEvents_Event.OnUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event OnUpdate As _CommandBarsEvents_OnUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Core::_CommandBarsEvents_OnUpdateEventHandler ^ OnUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbcf5-102">コマンド バーに何らかの変更が加えられると発生します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbcf5-102">Occurs when any change is made to a command bar.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="dbcf5-103">
+            <para>
+              <b>OnUpdate</b>イベントは、<see cref="T:Microsoft.Office.Core.CommandBar" />オブジェクトとすべてのコマンド バー コントロール。コマンド バーまたはコマンド バー コントロールへの変更、またはコマンド バーまたはコマンド バー コントロールの状態への変更によってイベントが発生します。これらの変更にたとえば、テキストまたはセルの選択によって発生します。<b>OnUpdate</b>イベントの数が多いが、通常の使用時に発生する可能性が、のでこのイベントを使用する場合は開発者が注意が必要です。このイベントは、カスタム コマンド バーが追加または削除されたことを確認するには、主に使用することを強くお勧めする<see cref="T:Microsoft.Office.Core.COMAddIn" />オブジェクトです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbcf5-103">
+              <para>The <b>OnUpdate</b> event is recognized by the <see cref="T:Microsoft.Office.Core.CommandBar" /> object and all command bar controls. The event is triggered by any change to a command bar or command bar control or any change to the state of a command bar or command bar control. These changes can occur due to a text or cell selection, for example. Since a large number of <b>OnUpdate</b> events can occur during normal usage, developers should exercise caution when using this event. It is strongly recommended that this event be used primarily for checking that a custom command bar has been added or removed by a <see cref="T:Microsoft.Office.Core.COMAddIn" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

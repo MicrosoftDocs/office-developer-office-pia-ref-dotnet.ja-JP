@@ -1,0 +1,441 @@
+<Type Name="DocumentProperty" FullName="Microsoft.Office.Core.DocumentProperty">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="be826a73e8f4e085cc5edc2a6bc0a3254ae53c15" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661033" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DocumentProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocumentProperty" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.DocumentProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DocumentProperty" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DocumentProperty" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2DF8D04E-5BFA-101B-BDE5-00AA0044DE52")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="25f5c-101">コンテナー ドキュメントのユーザー設定のプロパティ、または組み込みのドキュメント プロパティを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="25f5c-101">Represents a custom or built-in document property of a container document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="25f5c-102">
+        <para>
+          <b>DocumentProperty</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Core.DocumentProperties" />コレクションです</para>。
+      <para>使用<b>BuiltinDocumentProperties</b>(<paramref name="index" />)、<paramref name="index" />は、名前または特定の組み込み文書プロパティを表す単一の<b>DocumentProperty</b>オブジェクトを取得するのには、組み込みのドキュメント プロパティのインデックス番号。<b>CustomDocumentProperties</b>を使用 (<paramref name="index" />)、<paramref name="index" />名または特定のカスタム ドキュメント プロパティを表す<b>DocumentProperty</b>オブジェクトを取得するのには、カスタム ドキュメント プロパティのインデックス番号</para>。
+      <para>次の一覧にすべての利用可能な組み込みドキュメント プロパティの名前が含まれています:</para><para>タイトル</para><para>件名</para><para>作成者</para><para>キーワード</para><para>コメント</para><para>テンプレート</para><para>最終作成者</para><para>リビジョン番号</para><para>アプリケーション名</para><para>最終印刷日時</para><para>作成日</para><para>最後に時間を節約</para><para>編集時間</para><para>ページの数</para><para>単語の数</para><para>文字数</para><para>セキュリティ</para><para>カテゴリ</para><para>形式</para><para>マネージャー</para><para>会社</para><para>バイト数</para><para>明細行の数</para><para>段落の数</para><para>スライドの数</para><para>ノートの数</para><para>非表示スライドの数</para><para>クリップをマルチ メディアの数</para><para>コンテナーのアプリケーションでは、すべての組み込みドキュメント プロパティの値を定義しないとは限りません。返す特定のアプリケーションは、組み込みのドキュメント プロパティのいずれかの値で定義されていない場合、は、<see cref="P:Microsoft.Office.Core.DocumentProperty.Value" />そのドキュメント プロパティのプロパティのエラーが発生します</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="25f5c-102">
+          <para>The <b>DocumentProperty</b> object is a member of the <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection.</para>
+          <para>Use <b>BuiltinDocumentProperties</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number of the built-in document property, to return a single <b>DocumentProperty</b> object that represents a specific built-in document property. Use <b>CustomDocumentProperties</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number of the custom document property, to return a <b>DocumentProperty</b> object that represents a specific custom document property.</para>
+          <para>The following list contains the names of all the available built-in document properties:</para>
+          <para>Title</para>
+          <para>Subject</para>
+          <para>Author</para>
+          <para>Keywords</para>
+          <para>Comments</para>
+          <para>Template</para>
+          <para>Last Author</para>
+          <para>Revision Number</para>
+          <para>Application Name</para>
+          <para>Last Print Date</para>
+          <para>Creation Date</para>
+          <para>Last Save Time</para>
+          <para>Total Editing Time</para>
+          <para>Number of Pages</para>
+          <para>Number of Words </para>
+          <para>Number of Characters</para>
+          <para>Security</para>
+          <para>Category</para>
+          <para>Format</para>
+          <para>Manager</para>
+          <para>Company</para>
+          <para>Number of Bytes</para>
+          <para>Number of Lines</para>
+          <para>Number of Paragraphs</para>
+          <para>Number of Slides</para>
+          <para>Number of Notes</para>
+          <para>Number of Hidden Slides</para>
+          <para>Number of Multimedia Clips</para>
+          <para>Container applications don't necessarily define a value for every built-in document property. If a given application doesn't define a value for one of the built-in document properties, returning the <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> property for that document property causes an error.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-103">オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743821)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-104">指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="25f5c-105">
+            <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.DocumentProperty.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.DocumentProperty.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentProperty.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-106">ユーザー設定のドキュメント プロパティを削除します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-106">Removes a custom document property.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="25f5c-107">
+            <para>組み込みのドキュメント プロパティを削除することはできません。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-107">
+              <para>You cannot delete a built-in document property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkSource">
+      <MemberSignature Language="C#" Value="public string LinkSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LinkSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.LinkSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkSource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-108">リンクされたカスタム ドキュメント プロパティのソースを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-108">Returns or sets the source of a linked custom document property.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="25f5c-109">
+            <para>このプロパティにのみにカスタム ドキュメント プロパティが適用されます組み込みのドキュメント プロパティを使うことはできません。</para> 。
+          <para>指定したリンクのリンク元は、コンテナー アプリケーションによって定義されます</para>。
+          <para><b>LinkSource</b>プロパティのセットを設定します<see cref="P:Microsoft.Office.Core.DocumentProperty.LinkToContent" />プロパティを<b>True</b>にします</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-109">
+              <para>This property applies only to custom document properties; you cannot use it with built-in document properties.</para>
+              <para>The source of the specified link is defined by the container application.</para>
+              <para>Setting the <b>LinkSource</b> property sets the <see cref="P:Microsoft.Office.Core.DocumentProperty.LinkToContent" /> property to <b>True</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkToContent">
+      <MemberSignature Language="C#" Value="public bool LinkToContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LinkToContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.LinkToContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkToContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LinkToContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-110">カスタム ドキュメント プロパティの値がコンテナー ドキュメントのコンテンツにリンクされているかどうかを決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-110">Determine if the value of the custom document property is linked to the content of the container document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="25f5c-111">
+            <para>カスタム ドキュメント プロパティの値がコンテナー ドキュメントのコンテンツにリンクされている場合、このプロパティが<b>True</b>を返します<b>False</b>値が静的である場合</para>。
+          <para>このプロパティは、カスタム ドキュメント プロパティにのみ適用されます。組み込みのドキュメント プロパティは、このプロパティの値は<b>False</b>です</para>。使用の
+          <para>、<see cref="P:Microsoft.Office.Core.DocumentProperty.LinkSource" />リンクのプロパティを指定されたソースを設定するプロパティです。<b>True</b>に<b>なります</b>プロパティを設定する<b>LinkSource</b>プロパティを設定します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-111">
+              <para>This property returns <b>True</b> if the value of the custom document property is linked to the content of the container document; <b>False</b> if the value is static.</para>
+              <para>This property applies only to custom document properties. For built-in document properties, the value of this property is <b>False</b>.</para>
+              <para>Use the <see cref="P:Microsoft.Office.Core.DocumentProperty.LinkSource" /> property to set the source for the specified linked property. Setting the <b>LinkSource</b> property sets the <b>LinkToContent</b> property to <b>True</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-112">指定したオブジェクトの名前を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-112">Returns or sets the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-113">指定したオブジェクトの<b>親</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-113">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoDocProperties Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoDocProperties Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As MsoDocProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoDocProperties Type { Microsoft::Office::Core::MsoDocProperties get(); void set(Microsoft::Office::Core::MsoDocProperties value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoDocProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-114">ドキュメント プロパティの種類を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-114">Returns or sets the document property type.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="25f5c-115">
+            <para>このプロパティは、組み込みのドキュメント プロパティは読み取り専用カスタム ドキュメント プロパティの読み取り/書き込み。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-115">
+              <para>This property is read-only for built-in document properties; read/write for custom document properties.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentProperty.Value" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="25f5c-116">ドキュメント プロパティの値を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-116">Returns or sets the value of a document property.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="25f5c-117">
+            <para>コンテナー アプリケーションの組み込みドキュメント プロパティのいずれかの値が定義されていない、そのドキュメント プロパティに対する<b>Value</b>プロパティを読み取り中、エラーが発生します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="25f5c-117">
+              <para>If the container application doesn't define a value for one of the built-in document properties, reading the <b>Value</b> property for that document property causes an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

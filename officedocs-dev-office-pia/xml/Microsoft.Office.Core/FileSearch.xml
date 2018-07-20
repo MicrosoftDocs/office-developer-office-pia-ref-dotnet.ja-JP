@@ -1,0 +1,824 @@
+<Type Name="FileSearch" FullName="Microsoft.Office.Core.FileSearch">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6b9b7b2b808d83357cc4a067d756b5cc9697f058" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661008" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileSearch : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileSearch implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.FileSearch" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileSearch&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileSearch : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0332-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4176)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1f92f-101">[ファイル] メニューで、[開く] ダイアログ ボックスの機能を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1f92f-101">Represents the functionality of the Open dialog box accessible by the File menu.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="1f92f-102">
+        <para>
+          <b>FileSearch</b>オブジェクトを取得するのには、 <b>FileSearch</b>オブジェクトのプロパティの個別のアプリケーションの<b>アプリケーション</b>を使用します</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Core.FileSearch.NewSearch" />検索条件を既定の設定にリセットするメソッドです。<b>NewSearch</b>メソッドを使用して選択的にプロパティを設定できます、次のファイル検索の前のプロパティ値を手動でリセットすることがなく検索を実行すると後に、すべてのプロパティ値が保持されます</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1f92f-102">
+          <para>Use the <b>FileSearch</b> property of an individual application's <b>Application</b> object to return the <b>FileSearch</b> object.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.FileSearch.NewSearch" /> method to reset the search criteria to the default settings. All property values are retained after each search is run, and by using the <b>NewSearch</b> method you can selectively set properties for the next file search without manually resetting previous property values.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-103">オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-104">指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-105">
+            <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.FileSearch.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティの<b>場合、スペース</b>、 <b>SharedWorkspaceFolder</b>、 <b>SharedWorkspaceLink</b>、 <b>SharedWorkspaceTask</b>オブジェクトを使用して、それらのオブジェクトを作成したユーザーの名前を返します。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.FileSearch.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <b>SharedWorkspaceFile</b>, <b>SharedWorkspaceFolder</b>, <b>SharedWorkspaceLink</b>, and <b>SharedWorkspaceTask</b> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public int Execute (Microsoft.Office.Core.MsoSortBy SortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Microsoft.Office.Core.MsoSortOrder SortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, bool AlwaysAccurate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Execute([in]valuetype Microsoft.Office.Core.MsoSortBy SortBy, [in]valuetype Microsoft.Office.Core.MsoSortOrder SortOrder, [in]bool AlwaysAccurate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute (Optional SortBy As MsoSortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Optional SortOrder As MsoSortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, Optional AlwaysAccurate As Boolean = false) As Integer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SortBy" Type="Microsoft.Office.Core.MsoSortBy" />
+        <Parameter Name="SortOrder" Type="Microsoft.Office.Core.MsoSortOrder" />
+        <Parameter Name="AlwaysAccurate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="SortBy">
+          <span data-ttu-id="1f92f-106">省略可能な<see cref="T:Microsoft.Office.Core.MsoSortBy" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-106">Optional <see cref="T:Microsoft.Office.Core.MsoSortBy" />.</span>
+          </span>
+          <span data-ttu-id="1f92f-107">取得したファイルの並べ替えに使用するメソッドです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-107">The method used to sort the returned file(s).</span>
+          </span>
+        </param>
+        <param name="SortOrder">
+          <span data-ttu-id="1f92f-108">省略可能な<see cref="T:Microsoft.Office.Core.MsoSortOrder" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-108">Optional <see cref="T:Microsoft.Office.Core.MsoSortOrder" />.</span>
+          </span>
+          <span data-ttu-id="1f92f-109">取得したファイルが並べ替えられる順序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-109">The order in which the returned file(s) are sorted.</span>
+          </span>
+        </param>
+        <param name="AlwaysAccurate">
+          <span data-ttu-id="1f92f-110">オプションの <b>Boolean</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-110">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="1f92f-111">
+            <b>True</b>を追加、変更、またはファイルの検索の一部として、ファイル ・ インデックスが最後に更新された後に削除されたファイルに含まれます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-111">
+              <b>True</b> to include files that have been added, modified, or deleted since the file index was last updated as part of the file search.</span>
+          </span>
+          <span data-ttu-id="1f92f-112">既定値は <b>True</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-112">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="1f92f-113">指定したファイルの検索を開始します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-113">Begins the search for the specified file(s).</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="1f92f-114">
+            <para>このプロパティは、<b>整数値</b>を返します: 0 (0) のファイルが見つからない場合または 1 つまたは複数のファイルが見つかった場合は正の数です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-114">
+              <para>This property returns an <b>Integer</b>: zero (0) if no files are found, or a positive number if one or more files are found.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-115">ファイルの検索時に検索するファイルの名前を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-115">Returns or sets the name of the file to look for during a file search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-116">
+            <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
+          <para>ファイルの名前を含めることが、* (アスタリスク) またはしますか?(疑問符) のワイルドカード。疑問符のワイルドカードを使用して、任意の 1 文字に一致します。たとえば、"gray"と""します grey の両方に一致するように<b>gr?y</b>を入力します。任意の文字数に一致するのにアスタリスクのワイルドカードを使用します。たとえばを持つすべてのファイルを検索するのには<b>「*.txt」</b>と入力します。TXT 拡張子</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-116">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>The name of the file may include the * (asterisk) or ? (question mark) wildcards. Use the question mark wildcard to match any single character. For example, type <b>gr?y </b>to match both "gray" and "grey." Use the asterisk wildcard to match any number of characters. For example, type <b>*.txt</b> to find all files that have the .TXT extension.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoFileType FileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoFileType FileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileType As MsoFileType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoFileType FileType { Microsoft::Office::Core::MsoFileType get(); void set(Microsoft::Office::Core::MsoFileType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-117">返すまたは、ファイルの検索時に検索するファイルの種類を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-117">Returns or sets the type of file to look for during a file search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-118">
+            <para>定数<b>msoFileTypeOfficeFiles</b>には、次の拡張子のいずれかですべてのファイルが含まれています: \* *.doc、*.xls、*、.ppt、*.pps、*.obd、*.mdb *.mpd、* .dot、*.xlt、* \*.pot, \*.obt, \*.htm、または \* .html。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-118">
+              <para>The constant <b>msoFileTypeOfficeFiles</b> includes all files with any of the following extensions: \*.doc, \*.xls, \*.ppt, \*.pps, \*.obd, \*.mdb, \*.mpd, \*.dot, \*.xlt, \*.pot, \*.obt, \*.htm, or \*.html.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileTypes FileTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FileTypes FileTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileTypes As FileTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FileTypes ^ FileTypes { Microsoft::Office::Core::FileTypes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-119">返します、<see cref="T:Microsoft.Office.Core.FileTypes" />コレクションです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-119">Returns a <see cref="T:Microsoft.Office.Core.FileTypes" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoundFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FoundFiles FoundFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FoundFiles FoundFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FoundFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FoundFiles As FoundFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FoundFiles ^ FoundFiles { Microsoft::Office::Core::FoundFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FoundFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-120">返します、 <see cref="T:Microsoft.Office.Core.FoundFiles" /> 、検索中に見つかったすべてのファイルの名前を格納しているオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-120">Returns a <see cref="T:Microsoft.Office.Core.FoundFiles" /> object that contains the names of all the files found during a search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoLastModified LastModified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoLastModified LastModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModified As MsoLastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoLastModified LastModified { Microsoft::Office::Core::MsoLastModified get(); void set(Microsoft::Office::Core::MsoLastModified value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoLastModified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-121">指定したファイルが最後に変更および保存するための時間を表す定数を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-121">Returns or sets a constant that represents the amount of time since the specified file was last modified and saved.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="1f92f-122">既定値は、 <b>msoLastModifiedAnyTime</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-122">The default value is <b>msoLastModifiedAnyTime</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookIn">
+      <MemberSignature Language="C#" Value="public string LookIn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LookIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LookIn" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookIn As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LookIn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-123">指定したファイルの検索時に検索するフォルダーを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-123">Returns or sets the folder to be searched during the specified file search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAllWordForms">
+      <MemberSignature Language="C#" Value="public bool MatchAllWordForms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchAllWordForms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchAllWordForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchAllWordForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchAllWordForms { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-124">またはファイルのプロパティで、ファイルの本文に含まれる単語のすべての活用形も含めて、ファイル検索が展開されているかどうかを決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-124">Determines if the file search is expanded to include all forms of the specified word contained in the body of the file or in the file's properties.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-125">
+            <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。<b><para>このプロパティは Trueを返しますまたはファイルのプロパティで、ファイルの本文に含まれる単語のすべての活用形も含めて、ファイル検索が展開されている場合<b>False</b>検索が展開されていない場合です</para></b>。
+          <para>このプロパティは、Mswds_en.lex ファイルをインストールし、登録されている場合にのみ使用します。このファイルが標準的なセットアップの一部としてインストールされていないことに注意してください</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-125">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>This property returns <b>True</b> if the file search is expanded to include all forms of the specified word contained in the body of the file or in the file's properties; <b>False</b> if the search is not expanded.</para>
+              <para>This property is available only if the file Mswds_en.lex has been installed and registered. Note that this file isn't installed as part of a typical setup.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchTextExactly">
+      <MemberSignature Language="C#" Value="public bool MatchTextExactly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchTextExactly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchTextExactly" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchTextExactly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchTextExactly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-126">正確な単語または語句を指定したファイルのプロパティが含まれているか、指定したファイルが検索されますファイルのみが決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-126">Determines if the specified file search will find only files whose body text or file properties contain the exact word or phrase that you've specified.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-127">
+            <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。<b><para>このプロパティは Trueを返します、指定されたファイルが検索されますファイルだけが本文または正確な語句は指定したファイルのプロパティが含まれている場合<b>False</b>検索がより一般的な場合です</para></b>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-127">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>This property returns <b>True</b> if the specified file search will find only files whose body text or file properties contain the exact word or phrase that you've specified; <b>False</b> if the search is more general.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSearch">
+      <MemberSignature Language="C#" Value="public void NewSearch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewSearch() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.NewSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NewSearch ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewSearch();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-128">すべての検索条件の設定を既定の設定にリセットします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-128">Resets all the search criteria settings to their default settings.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="1f92f-129">
+            <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
+          <para>検索条件の設定は、アプリケーション セッション全体で保持されます。検索条件を変更するたびにこのメソッドを使用します。このメソッドでは、値はリセットされませんが、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティ</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-129">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>Search criteria settings are retained throughout an application session. Use this method every time you change search criteria. This method will not reset the value of the <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTests">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.PropertyTests PropertyTests { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.PropertyTests PropertyTests" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.PropertyTests" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyTests As PropertyTests" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PropertyTests ^ PropertyTests { Microsoft::Office::Core::PropertyTests ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.PropertyTests</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-130">返します、<see cref="T:Microsoft.Office.Core.PropertyTests" />の検索を行うファイルのすべての検索条件を表すコレクション。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-130">Returns the <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection that represents all the search criteria for a file search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshScopes">
+      <MemberSignature Language="C#" Value="public void RefreshScopes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshScopes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.RefreshScopes" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshScopes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshScopes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-131">現在利用可能な一覧を更新<see cref="T:Microsoft.Office.Core.ScopeFolder" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-131">Refreshes the list of currently available <see cref="T:Microsoft.Office.Core.ScopeFolder" /> objects.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchFolders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchFolders SearchFolders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchFolders SearchFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchFolders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchFolders As SearchFolders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchFolders ^ SearchFolders { Microsoft::Office::Core::SearchFolders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchFolders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-132">返します、<see cref="T:Microsoft.Office.Core.SearchFolders" />コレクションです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-132">Returns a <see cref="T:Microsoft.Office.Core.SearchFolders" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchScopes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchScopes SearchScopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchScopes SearchScopes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchScopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchScopes As SearchScopes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchScopes ^ SearchScopes { Microsoft::Office::Core::SearchScopes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-133">返します、<see cref="T:Microsoft.Office.Core.SearchScopes" />コレクションです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-133">Returns a <see cref="T:Microsoft.Office.Core.SearchScopes" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchSubFolders">
+      <MemberSignature Language="C#" Value="public bool SearchSubFolders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchSubFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchSubFolders" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchSubFolders As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchSubFolders { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-134">指定したフォルダー内のすべてのサブフォルダーが検索に含まれて かどうかを決定する、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティ。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-134">Determines if the search includes all the subfolders in the folder specified by the <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> property.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-135">
+            <para>検索で指定したフォルダー内のすべてのサブフォルダーが含まれる場合、このプロパティが<b>True</b>を返します、<see cref="P:Microsoft.Office.Core.FileSearch.LookIn" />プロパティです。<b>False を指定</b>していない場合。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-135">
+              <para>This property returns <b>True</b> if the search includes all the subfolders in the folder specified by the <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> property; <b>False</b> if it does not.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOrProperty">
+      <MemberSignature Language="C#" Value="public string TextOrProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextOrProperty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.TextOrProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextOrProperty As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextOrProperty { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1f92f-136">ファイルの検索中にファイルの内容またはファイルのプロパティ] のいずれかで、検索する語句を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-136">Returns or sets the word or phrase to be searched for, in either the body of a file or the file's properties, during the file search.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1f92f-137">
+            <para>単語または語句を含めることができます、* (アスタリスク) またはしますか?(疑問符) のワイルドカード文字です</para>。任意の 1 文字に一致する文字を
+          <para>疑問符のワイルドカードを使用します。入力""します grey または"gray"のいずれかの少なくとも 1 つのインスタンスが含まれているすべてのファイルを検索する<b>gr?y</b></para> 。任意の文字数に一致するワイルドカード文字を
+          <para>、アスタリスクを使用します。たとえば、「 <b>San *</b> 」San。「で始まる 1 つ以上の単語が含まれているすべてのファイルを取得する</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1f92f-137">
+              <para>The word or phrase can include the * (asterisk) or ? (question mark) wildcard character.</para>
+              <para>Use the question mark wildcard character to match any single character. For example, type <b>gr?y</b> to find all files that contain at least one instance of either "gray" or "grey."</para>
+              <para>Use the asterisk wildcard character to match any number of characters. For example, type <b>San*</b> to return all files that contain at least one word that begins with "San."</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

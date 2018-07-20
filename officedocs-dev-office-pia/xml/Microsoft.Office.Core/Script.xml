@@ -1,0 +1,513 @@
+<Type Name="Script" FullName="Microsoft.Office.Core.Script">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2140b9d9200bd6144f2a36ebdceefe33a91ca36c" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661407" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Script : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Script implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Script" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Script&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Script : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0341-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="bd384-101">Microsoft Word 文書、Microsoft Excel スプレッドシート、または Microsoft PowerPoint スライド上の HTML スクリプトのブロックを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bd384-101">Represents a block of HTML script in a Microsoft Word document, on a Microsoft Excel spreadsheet, or on a Microsoft PowerPoint slide.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="bd384-102">
+        <para>
+          <b>スクリプト</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Core.Scripts" />コレクションです</para>。
+      <para>使用<b>Scripts.Item</b>(<paramref name="index" />)、<paramref name="index" />は、1 つの<b>スクリプト</b>オブジェクトを取得するには、名前、ID、または、スクリプトのインデックス番号をします。<b>スクリプト</b>オブジェクトは、<see cref="P:Microsoft.Office.Core.Script.Id" />プロパティは、スクリプトにアクセスするための便利な名前を提供する</para><para>を変更するスクリプトで使用するスクリプト言語を指定することができます、<see cref="P:Microsoft.Office.Core.Script.Language" />プロパティ</para>。
+      <para>を使用して HTML ドキュメント内のスクリプト アンカー図形の位置を確認することができます、<see cref="P:Microsoft.Office.Core.Script.Location" />プロパティ</para>。
+      <para>を確認することや、セットの属性に追加、&lt;スクリプト&gt;タグの言語属性と ID 属性) を使用して、<see cref="P:Microsoft.Office.Core.Script.Extended" />プロパティ</para>。
+      <para>を確認するかを使用して、特定のスクリプトに関連付けられたスクリプト テキストを設定することができます、<see cref="P:Microsoft.Office.Core.Script.ScriptText" />プロパティ</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bd384-102">
+          <para>The <b>Script</b> object is a member of the <see cref="T:Microsoft.Office.Core.Scripts" /> collection.</para>
+          <para>Use <b>Scripts.Item</b>(<paramref name="index" />), where <paramref name="index" /> is the name, ID, or index number of a script, to return a single <b>Script</b> object. Each <b>Script</b> object is identified by the <see cref="P:Microsoft.Office.Core.Script.Id" /> property, which provides a convenient name you can use to access the script.</para>
+          <para>You can specify the scripting language used in the script by changing the <see cref="P:Microsoft.Office.Core.Script.Language" /> property.</para>
+          <para>You can check the location of the script anchor shape within an HTML document by using the <see cref="P:Microsoft.Office.Core.Script.Location" /> property.</para>
+          <para>You can check or set attributes added to the &lt;SCRIPT&gt; tag (with the exception of the LANGUAGE and ID attributes) by using the <see cref="P:Microsoft.Office.Core.Script.Extended" /> property.</para>
+          <para>You can check or set the script text associated with a given script by using the <see cref="P:Microsoft.Office.Core.Script.ScriptText" /> property.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-103">オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-104">指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-105">
+            <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.Script.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.Script.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Script.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-106">コレクションから指定したオブジェクトを削除します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-106">Deletes the specified object from the collection.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="bd384-107">
+            <para>
+              <see cref="T:Microsoft.Office.Core.Scripts" /> 、 <b>Delete</b>メソッドを使用して、コレクションが指定した Microsoft Word 文書、Microsoft Excel のワークシート、または PowerPoint のスライドからすべてのスクリプトを削除します。スクリプト アンカーはホスト アプリケーションの図形で表されます。したがって、Excel および PowerPoint の<b>図形</b>のコレクションと、 <b>InlineShapes</b>と Word での<b>図形</b>のコレクションから、 <b>msoScriptAnchor</b>の型の場合は、各スクリプト アンカーに関連付けられている<b>Shape</b>オブジェクトが削除されます。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-107">
+              <para>For the <see cref="T:Microsoft.Office.Core.Scripts" /> collection, using the <b>Delete</b> method removes all scripts from the specified Microsoft Word document, Microsoft Excel worksheet, or Microsoft PowerPoint slide. A script anchor is represented by a shape in the host application. Therefore, the <b>Shape</b> object associated with each script anchor of type <b>msoScriptAnchor</b> is deleted from the <b>Shapes</b> collection in Excel and PowerPoint and from the <b>InlineShapes</b> and <b>Shapes</b> collections in Word.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extended">
+      <MemberSignature Language="C#" Value="public string Extended { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Extended" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Extended" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extended As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extended { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-108">追加の属性の設定を取得または設定、&lt;スクリプト&gt;、言語属性と ID 属性以外のタグです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-108">Returns or sets attributes added to the &lt;SCRIPT&gt; tag, with the exception of the LANGUAGE and ID attributes.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-109">
+            <para>属性は、HTML の場合と同様、スペースで区切られます。<b>拡張</b>プロパティを使用して、言語属性または ID 属性を渡すことはできません</para>。
+          <para>、Microsoft Office ホスト アプリケーションに渡された属性の構文をチェックする手段を提供していません</para>。
+          <para><b>拡張</b>プロパティでは、言語属性を指定した場合、&lt;スクリプト&gt;タグは、競合が発生するという 2 つの言語設定を受信します</para>。
+          <para><b>Extended</b>プロパティに ID 属性を渡すし、ID が設定されていないいずれかの方法を通じて、ID のパラメーターの場合、<see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />メソッドまたは<see cref="P:Microsoft.Office.Core.Script.Id" />のプロパティ、<see cref="T:Microsoft.Office.Core.Script" />オブジェクトの ID が正常にエクスポートします</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-109">
+              <para>Attributes are separated by spaces, the same as in HTML. You cannot pass the LANGUAGE attribute or the ID attribute by using the <b>Extended</b> property.</para>
+              <para>The Microsoft Office host application doesn’t provide any means of checking the syntax of passed attributes.</para>
+              <para>If you pass the LANGUAGE attribute in the <b>Extended</b> property, the &lt;SCRIPT&gt; tag receives two language settings, which causes a conflict.</para>
+              <para>If you pass an ID attribute in the <b>Extended</b> property and no ID has been set through either the ID parameter of the <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> method or the <see cref="P:Microsoft.Office.Core.Script.Id" /> property of the <see cref="T:Microsoft.Office.Core.Script" /> object, the ID is exported correctly.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-110">値を取得または設定の ID、<see cref="T:Microsoft.Office.Core.Script" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-110">Returns or sets the ID of a <see cref="T:Microsoft.Office.Core.Script" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-111">
+            <para>返された ID の ID 属性では、&lt;スクリプト&gt;HTML タグです。指定された ID 属性がないかどうか、&lt;スクリプト&gt;タグでは、 <b>Id</b>プロパティが空の文字列を返します</para>。
+          <para><b>Id</b>は、要素の名前付けに使用される SGML 識別子を指定します。有効な識別子は、英字で始まり、英数字から構成されている任意の文字列を含める文字列では、アンダー スコア (_) を含めることもできます</para>。
+          <para>ID は、HTML ドキュメント内で一意である必要があります</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-111">
+              <para>The ID returned is the ID attribute of the &lt;SCRIPT&gt; tag in HTML. If there’s no ID attribute specified in the &lt;SCRIPT&gt; tag, the <b>Id</b> property returns an empty string.</para>
+              <para>
+                <b>Id</b> specifies an SGML identifier used for naming elements. Valid identifiers include any string that begins with a letter and is composed of alphanumeric characters; the string can also include the underscore character ( _ ).</para>
+              <para>The ID must be unique within the HTML document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScriptLanguage Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScriptLanguage Language" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As MsoScriptLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScriptLanguage Language { Microsoft::Office::Core::MsoScriptLanguage get(); void set(Microsoft::Office::Core::MsoScriptLanguage value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScriptLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-112">アクティブなスクリプトのスクリプト言語を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-112">Returns or sets the scripting language of the active script.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-113">
+            <para>
+              <see cref="T:Microsoft.Office.Core.MsoScriptLanguage" />で、[<b>言語</b>] プロパティで使用される定数が使用されるも、<paramref name="Language" />のパラメーター、<see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />のメソッド、<see cref="T:Microsoft.Office.Core.Scripts" />コレクションです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-113">
+              <para>The <see cref="T:Microsoft.Office.Core.MsoScriptLanguage" /> constants used with the <b>Language</b> property are also used in the <paramref name="Language" /> parameter in the <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> method of the <see cref="T:Microsoft.Office.Core.Scripts" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScriptLocation Location { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScriptLocation Location" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As MsoScriptLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScriptLocation Location { Microsoft::Office::Core::MsoScriptLocation get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScriptLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-114">指定した HTML ドキュメント内のスクリプト アンカーの位置を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-114">Returns the location of the script anchor in the specified HTML document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-115">
+            <para>HTML ドキュメント内のスクリプト タグの間で任意の位置、 &lt;HTML&gt; 、ドキュメント内のタグ。Microsoft Word、Excel、または PowerPoint の場合は、スクリプト アンカーのみがの間にある、&lt;本文&gt;タグが表示されます。追加の HTML スクリプトの前に、または後に表示される、&lt;本文&gt;タグに格納されますが、ユーザーに表示されていない</para>。
+          <para>、<see cref="T:Microsoft.Office.Core.Scripts" />コレクションには、すべての内部または外部ドキュメントの本文であるかどうか、ドキュメント内に表示されるスクリプト アンカーが含まれています。使用して、<paramref name="Location" />の引数、<see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />メソッド内のスクリプト アンカーを挿入することができます、&lt;ヘッド&gt;と&lt;本文&gt;、HTML ドキュメント内のタグ。特定のスクリプト アンカーがドキュメント内に保存されているかを判断するのには、 <b>Location</b>プロパティを使用することもできます</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-115">
+              <para>Script tags in an HTML document can appear anywhere between the &lt;HTML&gt; tags in the document. In Microsoft Word, Excel, or PowerPoint, only the script anchors located between the &lt;BODY&gt; tags are visible. Additional HTML script that appears before or after the &lt;BODY&gt; tags is stored in but isn’t visible to the user.</para>
+              <para>The <see cref="T:Microsoft.Office.Core.Scripts" /> collection contains all of the script anchors that appear in the document, whether inside or outside of the main body of the document. Using the <paramref name="Location" /> argument of the <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> method, you can insert script anchors within the &lt;HEAD&gt; and &lt;BODY&gt; tags in the HTML document. You can also use the <b>Location</b> property to determine where a particular script anchor is stored within the document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-116">指定したオブジェクトの<b>親</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-116">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptText">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.ScriptText" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property ScriptText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-117">スクリプトのブロックに含まれているテキストを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-117">Returns or sets the text contained in a block of script.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-118">
+            <para>Microsoft Office ホスト アプリケーションでは、スクリプトの構文をチェックしません。<b>ScriptText</b>プロパティの既定のプロパティでは、<see cref="T:Microsoft.Office.Core.Script" />オブジェクトです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-118">
+              <para>The Microsoft Office host application doesn’t check the syntax of the script. The <b>ScriptText</b> property is the default property for the <see cref="T:Microsoft.Office.Core.Script" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="public object Shape { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Shape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Script.Shape" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shape { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd384-119">
+            <b>Shape</b>オブジェクトまたは Microsoft Office ホスト アプリケーションによっては、 <b>InlineShape</b>オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-119">Returns a <b>Shape</b> object or <b>InlineShape</b> object, depending on the Microsoft Office host application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd384-120">
+            <para>
+              <b>図形</b>のプロパティは、Microsoft Excel および PowerPoint の<b>Shape</b>オブジェクトを返します。Word での<b>図形</b>を<b>図形</b>オブジェクトのスクリプト アンカーが固定されていないかどうかインライン アンカーである場合、このプロパティは、 <b>InlineShape</b>オブジェクトを返します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd384-120">
+              <para>The <b>Shape</b> property returns a <b>Shape</b> object in Microsoft Excel and PowerPoint. In Word, the <b>Shape</b> property returns a <b>Shape</b> object if the script anchor is floating; if it’s an inline anchor, however, this property returns an <b>InlineShape</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
