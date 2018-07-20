@@ -1,0 +1,1087 @@
+<Type Name="Assistant" FullName="Microsoft.Office.Core.Assistant">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="61064786eac2bb5900c548fc2646b43d445a5449" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660658" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Assistant : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Assistant implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Assistant" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Assistant&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Assistant : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0322-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Microsoft Office アシスタントを表します。</summary>
+    <remarks>
+      <para>
+        <b>アシスタント</b>オブジェクトを取得するのにには、<b>アシスタント</b>のプロパティを使用します。<b>アシスタント</b>オブジェクトのコレクションが用意されていません一度にアクティブにできる<b>アシスタント</b>オブジェクトを 1 つだけです。使用して、 <see cref="P:Microsoft.Office.Core.Assistant.Visible" /> 、アシスタントを表示しを使用して、プロパティ、 <see cref="P:Microsoft.Office.Core.Assistant.On" /> 、アシスタントを有効にするプロパティ。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateWizard">
+      <MemberSignature Language="C#" Value="public void ActivateWizard (int WizardID, Microsoft.Office.Core.MsoWizardActType act, object Animation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateWizard([in]int32 WizardID, [in]valuetype Microsoft.Office.Core.MsoWizardActType act, [in]object Animation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.ActivateWizard(System.Int32,Microsoft.Office.Core.MsoWizardActType,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateWizard (WizardID As Integer, act As MsoWizardActType, Optional Animation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WizardID" Type="System.Int32" />
+        <Parameter Name="act" Type="Microsoft.Office.Core.MsoWizardActType" />
+        <Parameter Name="Animation" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="WizardID">返す数値によって、<see cref="M:Microsoft.Office.Core.Assistant.StartWizard(System.Boolean,System.String,System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。</param>
+        <param name="act">Office アシスタント ヘルプのセッションへの変更を指定します。</param>
+        <param name="Animation">アニメーション、Office アシスタントを実行が一時停止または再開するとします。</param>
+        <summary>カスタム ウィザードの実行中の Office アシスタントのヘルプを中断または再開します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Animation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoAnimationType Animation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoAnimationType Animation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Animation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Animation As MsoAnimationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAnimationType Animation { Microsoft::Office::Core::MsoAnimationType get(); void set(Microsoft::Office::Core::MsoAnimationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoAnimationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Office アシスタントのアニメーション動作を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティを適用する場合、<see cref="T:Microsoft.Office.Core.Assistant" />オブジェクトと、アシスタントは、指定したアニメーションをサポートしています、アシスタントのアニメーションがすぐに (場合は、アシスタントは表示されて、有効になっている)。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssistWithAlerts">
+      <MemberSignature Language="C#" Value="public bool AssistWithAlerts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssistWithAlerts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.AssistWithAlerts" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssistWithAlerts As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssistWithAlerts { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、Office アシスタントのバルーンは、Office アシスタントが表示されるときにアプリケーションの警告を発する。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssistWithHelp">
+      <MemberSignature Language="C#" Value="public bool AssistWithHelp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssistWithHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.AssistWithHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssistWithHelp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssistWithHelp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>の<b>場合は true</b> Office アシスタントが表示された場合、ユーザーがヘルプを表示する F1 キーを押したとき。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssistWithWizards">
+      <MemberSignature Language="C#" Value="public bool AssistWithWizards { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssistWithWizards" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.AssistWithWizards" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssistWithWizards As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssistWithWizards { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、Office アシスタント ウィザードのオンライン ヘルプが用意されています。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BalloonError">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBalloonErrorType BalloonError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBalloonErrorType BalloonError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.BalloonError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BalloonError As MsoBalloonErrorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBalloonErrorType BalloonError { Microsoft::Office::Core::MsoBalloonErrorType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBalloonErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>最後に記録されたバルーン エラーを示す値を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoAlert">
+      <MemberSignature Language="C#" Value="public int DoAlert (string bstrAlertTitle, string bstrAlertText, Microsoft.Office.Core.MsoAlertButtonType alb, Microsoft.Office.Core.MsoAlertIconType alc, Microsoft.Office.Core.MsoAlertDefaultType ald, Microsoft.Office.Core.MsoAlertCancelType alq, bool varfSysAlert);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DoAlert([in]string bstrAlertTitle, [in]string bstrAlertText, [in]valuetype Microsoft.Office.Core.MsoAlertButtonType alb, [in]valuetype Microsoft.Office.Core.MsoAlertIconType alc, [in]valuetype Microsoft.Office.Core.MsoAlertDefaultType ald, [in]valuetype Microsoft.Office.Core.MsoAlertCancelType alq, [in]bool varfSysAlert) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.DoAlert(System.String,System.String,Microsoft.Office.Core.MsoAlertButtonType,Microsoft.Office.Core.MsoAlertIconType,Microsoft.Office.Core.MsoAlertDefaultType,Microsoft.Office.Core.MsoAlertCancelType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoAlert (bstrAlertTitle As String, bstrAlertText As String, alb As MsoAlertButtonType, alc As MsoAlertIconType, ald As MsoAlertDefaultType, alq As MsoAlertCancelType, varfSysAlert As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DoAlert(System::String ^ bstrAlertTitle, System::String ^ bstrAlertText, Microsoft::Office::Core::MsoAlertButtonType alb, Microsoft::Office::Core::MsoAlertIconType alc, Microsoft::Office::Core::MsoAlertDefaultType ald, Microsoft::Office::Core::MsoAlertCancelType alq, bool varfSysAlert);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809393)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrAlertTitle" Type="System.String" />
+        <Parameter Name="bstrAlertText" Type="System.String" />
+        <Parameter Name="alb" Type="Microsoft.Office.Core.MsoAlertButtonType" />
+        <Parameter Name="alc" Type="Microsoft.Office.Core.MsoAlertIconType" />
+        <Parameter Name="ald" Type="Microsoft.Office.Core.MsoAlertDefaultType" />
+        <Parameter Name="alq" Type="Microsoft.Office.Core.MsoAlertCancelType" />
+        <Parameter Name="varfSysAlert" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bstrAlertTitle">警告のタイトルを設定します。</param>
+        <param name="bstrAlertText">アラートのテキストを設定します。</param>
+        <param name="alb">警告に表示されるボタンを指定します。</param>
+        <param name="alc">警告に表示されるアイコンを決定します。</param>
+        <param name="ald">アラートの既定のボタンとして設定するボタンを指定します。 この引数はボタンの数より大きい値に設定されている場合は、エラーが返されます。</param>
+        <param name="alq">常に<b>msoAlertCancelDefault</b>には、これを設定します。 その他の設定は、エラーを返すことがあります。</param>
+        <param name="varfSysAlert">
+          <b>True の</b>場合は、Office アシスタントを通じて警告が表示されている場合<b>、メッセージ ボックスに</b>警告が表示されます。</param>
+        <summary>警告を表示し、ユーザーが押したボタンを示す<b>整数</b>を返します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWizard">
+      <MemberSignature Language="C#" Value="public void EndWizard (int WizardID, bool varfSuccess, object Animation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndWizard([in]int32 WizardID, [in]bool varfSuccess, [in]object Animation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.EndWizard(System.Int32,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndWizard (WizardID As Integer, varfSuccess As Boolean, Optional Animation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WizardID" Type="System.Int32" />
+        <Parameter Name="varfSuccess" Type="System.Boolean" />
+        <Parameter Name="Animation" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="WizardID">
+          <b>アシスタント</b>によって返される数です。</param>
+        <param name="varfSuccess">
+          <b>True</b>をユーザーがウィザードを正常に完了したことを示します。</param>
+        <param name="Animation">場合に実行される Office アシスタントのアニメーション<paramref name="varfSuccess" />が<b>True</b>に設定します。 既定値は、 <b>msoAnimationCharacterSuccessMajor</b>です。</param>
+        <summary>によって返される変数の解放、<see cref="M:Microsoft.Office.Core.Assistant.StartWizard(System.Boolean,System.String,System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeatureTips">
+      <MemberSignature Language="C#" Value="public bool FeatureTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FeatureTips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.FeatureTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property FeatureTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FeatureTips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809373)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809373)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809373)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、Office アシスタントにアプリケーションの機能に関する情報を提供します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809388)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809388)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809388)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>アクティブな Office アシスタントのパスとファイル名を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GuessHelp">
+      <MemberSignature Language="C#" Value="public bool GuessHelp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GuessHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.GuessHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property GuessHelp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GuessHelp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809383)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809383)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809383)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ユーザー選択、アシスタント ウィンドウをクリックするか、f1 キーを押す前に<b>true の</b>場合は、Office アシスタントのバルーンは、キーワードに基づいてヘルプ トピックの一覧を表します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="public void Help ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Help() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.Help" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Help ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Help();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>「何か? を行う」、Office アシスタントと組み込みのバルーンを表示します。 標準の Office オンライン ヘルプのアシスタントのバルーンです。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighPriorityTips">
+      <MemberSignature Language="C#" Value="public bool HighPriorityTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HighPriorityTips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.HighPriorityTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property HighPriorityTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HighPriorityTips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809379)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809379)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809379)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は、Office アシスタントに優先順位の高いヒントを表示します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Item" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトに関連付けられているテキストを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyboardShortcutTips">
+      <MemberSignature Language="C#" Value="public bool KeyboardShortcutTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeyboardShortcutTips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.KeyboardShortcutTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyboardShortcutTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeyboardShortcutTips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809377)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809377)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809377)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、Office アシスタントにショートカット キーのヘルプが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public int Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>画面を基準にして指定したオブジェクトの左端から (ポイント単位) で、[Office アシスタント] ウィンドウまたはコマンド バーの距離 (ピクセル単位) での水平方向の位置を取得または設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseTips">
+      <MemberSignature Language="C#" Value="public bool MouseTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MouseTips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.MouseTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MouseTips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809375)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809375)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809375)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は、Office アシスタントにマウスを効果的に使用するための推奨事項を提供します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public void Move (int xLeft, int yTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Move([in]int32 xLeft, [in]int32 yTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.Move(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (xLeft As Integer, yTop As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int xLeft, int yTop);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xLeft" Type="System.Int32" />
+        <Parameter Name="yTop" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="xLeft">ポイント単位で、[Office アシスタント] ウィンドウの左端の位置。</param>
+        <param name="yTop">ポイント単位で、[Office アシスタント] ウィンドウの上端の位置。</param>
+        <summary>指定した場所に、Office アシスタントを移動します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveWhenInTheWay">
+      <MemberSignature Language="C#" Value="public bool MoveWhenInTheWay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MoveWhenInTheWay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.MoveWhenInTheWay" />
+      <MemberSignature Language="VB.NET" Value="Public Property MoveWhenInTheWay As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MoveWhenInTheWay { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、[Office アシスタント] ウィンドウは、ユーザーの作業領域と重なりそうになる場合に自動的に移動します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809390)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809390)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの名前を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewBalloon">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Balloon NewBalloon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.Balloon NewBalloon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.NewBalloon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewBalloon As Balloon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Balloon ^ NewBalloon { Microsoft::Office::Core::Balloon ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Balloon</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Office アシスタントのバルーンを作成します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="public bool On { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool On" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.On" />
+      <MemberSignature Language="VB.NET" Value="Public Property On As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool On { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809391)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809391)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809391)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、Office アシスタントが有効になっています。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reduced">
+      <MemberSignature Language="C#" Value="public bool Reduced { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Reduced" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Reduced" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reduced As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Reduced { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は、小さいサイズで、[Office アシスタント] ウィンドウが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetTips">
+      <MemberSignature Language="C#" Value="public void ResetTips ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetTips() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.ResetTips" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetTips ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetTips();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809354)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Office アシスタントのバルーンに表示されるアプリケーションのヒントをリセットします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchWhenProgramming">
+      <MemberSignature Language="C#" Value="public bool SearchWhenProgramming { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchWhenProgramming" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.SearchWhenProgramming" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchWhenProgramming As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchWhenProgramming { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809385)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809385)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809385)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、Office アシスタントが表示されるアプリケーションとプログラミングに関するヘルプです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sounds">
+      <MemberSignature Language="C#" Value="public bool Sounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Sounds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Sounds" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sounds As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sounds { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、Office アシスタントのアニメーションに対応するサウンドが生成されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartWizard">
+      <MemberSignature Language="C#" Value="public int StartWizard (bool On, string Callback, int PrivateX, object Animation, object CustomTeaser, object Top, object Left, object Bottom, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 StartWizard([in]bool On, [in]string Callback, [in]int32 PrivateX, [in]object Animation, [in]object CustomTeaser, [in]object Top, [in]object Left, [in]object Bottom, [in]object Right) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Assistant.StartWizard(System.Boolean,System.String,System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartWizard (On As Boolean, Callback As String, PrivateX As Integer, Optional Animation As Object, Optional CustomTeaser As Object, Optional Top As Object, Optional Left As Object, Optional Bottom As Object, Optional Right As Object) As Integer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="On" Type="System.Boolean" />
+        <Parameter Name="Callback" Type="System.String" />
+        <Parameter Name="PrivateX" Type="System.Int32" />
+        <Parameter Name="Animation" Type="System.Object" />
+        <Parameter Name="CustomTeaser" Type="System.Object" />
+        <Parameter Name="Top" Type="System.Object" />
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Bottom" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="On">
+          <b>True</b> Office 決定バルーンを表示します。 Office 決定バルーンは、彼または彼女がアクティブなカスタム ウィザードを使用してヘルプをかどうかをユーザーに確認します。 使用する必要はありません、<see cref="P:Microsoft.Office.Core.Assistant.Visible" />をこの引数に<b>True</b>を指定する場合、Office アシスタントを表示するプロパティです。</param>
+        <param name="Callback">Office 決定バルーンおよび分岐バルーンから実行するコールバック プロシージャの名前です。 分岐バルーンによって、ウィザード用に用意したカスタムのヘルプと標準の Office ヘルプから選択するユーザーです。</param>
+        <param name="PrivateX">コールバック プロシージャを開始したバルーンを識別する番号です。</param>
+        <param name="Animation">アニメーション、Office アシスタントを実行このメソッドを使用するとします。 既定値は、 <b>msoAnimationGetWizardy</b>です。</param>
+        <param name="CustomTeaser">
+          <b>False</b> Office 決定バルーンを表示します。</param>
+        <param name="Top">Office アシスタントが表示されたら、Office アシスタント ウィザードのカスタム フォームの角 (ポイント単位で、画面を基準) の位置を回避できます。</param>
+        <param name="Left">Office アシスタントが表示されたら、Office アシスタント ウィザードのカスタム フォームの角 (ポイント単位で、画面を基準) の位置を回避できます。</param>
+        <param name="Bottom">Office アシスタントが表示されたら、Office アシスタント ウィザードのカスタム フォームの角 (ポイント単位で、画面を基準) の位置を回避できます。</param>
+        <param name="Right">Office アシスタントが表示されたら、Office アシスタント ウィザードのカスタム フォームの角 (ポイント単位で、画面を基準) の位置を回避できます。</param>
+        <summary>Office アシスタントを開始し、セッションを識別する<b>整数</b>値を返します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>カスタム ウィザードで、Office アシスタントを実行する場合のみこのメソッドを使用する必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TipOfDay">
+      <MemberSignature Language="C#" Value="public bool TipOfDay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TipOfDay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.TipOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public Property TipOfDay As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TipOfDay { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809381)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809381)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809381)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、Office アシスタントが表示されます特別なヒントごとに、Office アプリケーションを起動します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public int Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>画面の上端に、Office アシスタントの上端から、または、指定したコマンド バーの上端から距離 (ポイント単位) を取得または設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>固定したコマンド バーの場合、このプロパティが返すか、コマンド バーから固定領域の上端まで距離を設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Assistant.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> と指定したオブジェクトが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

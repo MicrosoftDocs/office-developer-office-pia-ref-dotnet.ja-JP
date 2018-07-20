@@ -1,0 +1,104 @@
+<Type Name="MsoTextCaps" FullName="Microsoft.Office.Core.MsoTextCaps">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="14d4bb19362ca18ca02fdb0819609a7735fb9ab7" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660572" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum MsoTextCaps" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsoTextCaps extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.MsoTextCaps" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MsoTextCaps" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MsoTextCaps" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>テキストの大文字と小文字の使用方法を指定します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="msoAllCaps">
+      <MemberSignature Language="C#" Value="msoAllCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoTextCaps msoAllCaps = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoTextCaps.msoAllCaps" />
+      <MemberSignature Language="VB.NET" Value="msoAllCaps" />
+      <MemberSignature Language="C++ CLI" Value="msoAllCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextCaps</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>テキストはすべて大文字で表示されます。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoCapsMixed">
+      <MemberSignature Language="C#" Value="msoCapsMixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoTextCaps msoCapsMixed = int32(-2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoTextCaps.msoCapsMixed" />
+      <MemberSignature Language="VB.NET" Value="msoCapsMixed" />
+      <MemberSignature Language="C++ CLI" Value="msoCapsMixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextCaps</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2</MemberValue>
+      <Docs>
+        <summary>テキストは大文字と小文字を組み合わせて表示されます。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoNoCaps">
+      <MemberSignature Language="C#" Value="msoNoCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoTextCaps msoNoCaps = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoTextCaps.msoNoCaps" />
+      <MemberSignature Language="VB.NET" Value="msoNoCaps" />
+      <MemberSignature Language="C++ CLI" Value="msoNoCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextCaps</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>テキストは大文字を使用しないで表示されます。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoSmallCaps">
+      <MemberSignature Language="C#" Value="msoSmallCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoTextCaps msoSmallCaps = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoTextCaps.msoSmallCaps" />
+      <MemberSignature Language="VB.NET" Value="msoSmallCaps" />
+      <MemberSignature Language="C++ CLI" Value="msoSmallCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextCaps</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>された小文字大文字で表示されますが、現在のフォントとサイズの小文字と同じ高さでテキストを表示します。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

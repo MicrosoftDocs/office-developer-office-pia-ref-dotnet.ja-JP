@@ -1,0 +1,171 @@
+<Type Name="SearchScope" FullName="Microsoft.Office.Core.SearchScope">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="81e4a6e84cfecdb010ed3d55dafab420b37e96c9" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660639" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SearchScope : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SearchScope implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SearchScope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SearchScope&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SearchScope : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0367-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>使用して、検索可能なフォルダー ツリーの種類に対応、<see cref="T:Microsoft.Office.Core.FileSearch" />オブジェクトです。</summary>
+    <remarks>
+      <para>1 つの検索範囲の例は、このコンピューター上のローカルのドライブです。ネットワークのフォルダーと Outlook のフォルダーも使用可能な独立した検索範囲です。各<b>SearchScope</b>オブジェクトには、1 つが含まれています<see cref="T:Microsoft.Office.Core.ScopeFolder" />の検索範囲のルート フォルダーに対応するオブジェクトです</para>。
+      <para>使用、<see cref="P:Microsoft.Office.Core.SearchScopes.Item(System.Int32)" />のプロパティ、<see cref="T:Microsoft.Office.Core.SearchScopes" />コレクションに<b>SearchScope</b>オブジェクトを取得します</para>。
+      <para>に追加可能な<b>ScopeFolder</b>オブジェクトへのアクセスを提供する<b>SearchScope</b>オブジェクトは、最終的には、<see cref="T:Microsoft.Office.Core.SearchFolders" />コレクションです</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>オートメーション</b>オブジェクトに対してこのプロパティを使用するにはそのオブジェクトのコンテナー アプリケーションに戻ります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.SearchScope.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ScopeFolder ScopeFolder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ScopeFolder ScopeFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.ScopeFolder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScopeFolder As ScopeFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ScopeFolder ^ ScopeFolder { Microsoft::Office::Core::ScopeFolder ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ScopeFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.ScopeFolder" />オブジェクトです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSearchIn this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSearchIn Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Type" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As MsoSearchIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSearchIn default { Microsoft::Office::Core::MsoSearchIn get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSearchIn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>種類に対応する値を返す<see cref="T:Microsoft.Office.Core.SearchScope" />オブジェクトです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>型がある領域を示します、<see cref="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" />のメソッドの<see cref="T:Microsoft.Office.Core.FileSearch" />オブジェクトは、ファイルが検索されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

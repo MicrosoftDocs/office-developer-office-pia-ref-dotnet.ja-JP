@@ -1,0 +1,325 @@
+<Type Name="FileDialogFilters" FullName="Microsoft.Office.Core.FileDialogFilters">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="02be4993f6a7f44a27c6aff6cd74a89f8bb767a0" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20661520" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileDialogFilters : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileDialogFilters implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.FileDialogFilters" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileDialogFilters&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileDialogFilters : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0365-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>コレクションの<see cref="T:Microsoft.Office.Core.FileDialogFilter" />を使用して表示される [ファイル] ダイアログ ボックスで選択できるファイルの種類を表すオブジェクトの<see cref="T:Microsoft.Office.Core.FileDialog" />オブジェクトです。</summary>
+    <remarks>
+      <para>使用、<see cref="P:Microsoft.Office.Core.FileDialog.Filters" />のプロパティの<see cref="T:Microsoft.Office.Core.FileDialog" />オブジェクトを<b>FileDialogFilters</b>コレクションを取得します</para>。
+      <para>使用して、 <see cref="M:Microsoft.Office.Core.FileDialogFilters.Add(System.String,System.String,System.Object)" /><b>FileDialogFilter</b>オブジェクトを<b>FileDialogFilters</b>コレクションに追加します</para>。
+      <para><b>FileDialogFilters</b>コレクションを変更するときは、各アプリケーションが 1 つの<b>FileDialog</b>オブジェクトをインスタンス化できるだけ注意してください。つまり、 <b>FileDialogFilters</b>コレクションは、新しい種類のダイアログ ボックスで<b>FileDialog</b>メソッドを呼び出すたびに、既定のフィルターにリセットされます</para>。
+      <para>メモ実行時エラーになりますと連携して、<b>フィルター</b>のプロパティを使用する場合、 <see cref="M:Microsoft.Office.Core.FileDialogFilters.Clear" />、<b>追加</b>、または<see cref="M:Microsoft.Office.Core.FileDialogFilters.Delete(System.Object)" />メソッドの名前を付けて保存の<b>FileDialog</b>オブジェクトに適用するとします</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileDialogFilter Add (string Description, string Extensions, object Position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.FileDialogFilter Add([in]string Description, [in]string Extensions, [in]object Position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Add(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Description As String, Extensions As String, Optional Position As Object) As FileDialogFilter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileDialogFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Description" Type="System.String" />
+        <Parameter Name="Extensions" Type="System.String" />
+        <Parameter Name="Position" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Description">
+          <b>文字列</b> が必要です。 フィルターの一覧に追加するファイル拡張子の説明を表す文字列。</param>
+        <param name="Extensions">
+          <b>文字列</b> が必要です。 フィルターの一覧に追加するファイル拡張子を表すテキストです。 複数の拡張子を指定することがあり、それぞれをセミコロン (;) で区切る必要があります。 などの<paramref name="Extensions" />の引数を文字列に割り当てることができる:"*.txt です。*.htm"です。メモかっこは、拡張機能を追加する必要はありません。 Office では、説明と拡張子の文字列が 1 つのファイル フィルターの項目に連結されたときに、拡張子をかっこで囲むが自動的に追加します。</param>
+        <param name="Position">省略可能な<b>オブジェクト</b>です。 フィルターの一覧での新しいコントロールの位置を表す数字を指定します。 新しいフィルターは、この位置にあるフィルターの直前に挿入されます。 この引数を省略すると、フィルターは一覧の末尾に追加されます。</param>
+        <summary>ファイル] ダイアログ ボックスで、[種類] ボックスのファイル フィルターのリストに新しいファイル フィルターを追加し、新しく追加されたファイル フィルターを表す<b>FileDialogFilter</b>オブジェクトを取得します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>リスト内の各フィルターで構成される 2 つの要素: ファイルの拡張子 (「.txt」など) とファイルの拡張子 (例: テキスト ファイル) テキストの説明です。同時に、ファイル フィルターは、[ファイル タイプ] リスト ボックスとしての] に表示する: テキスト ファイル (*.txt) です</para>。
+          <para>リストにフィルターが追加されると、既定のフィルターは削除されないことに注意してください</para>。
+          <para>フィルターはウィンドウ] オプションをオンにした場合にのみ表示されます</para>。
+          <para>場合<paramref name="Position" />が無効な場合は、範囲の実行時エラーが表示されます。場合、<paramref name="Description" />と<paramref name="Extensions" />の値が有効ではありません、実行時エラー (解析) が表示されます</para>。
+          <para>フォルダーの選択ダイアログにはフィルターがありません。したがって、フィルター メソッドはフォルダーの作成に適用されません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>コマンド バーのコンボ ボックスのコントロール (ドロップダウン リスト ボックスまたはコンボ ボックス) からリスト項目を削除し、テキスト ボックス (エディット ボックスまたはコンボ ボックス) をクリアします。</summary>
+        <remarks>
+          <para>組み込みのコマンド バー コントロールに適用される場合、このメソッドは失敗します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したコレクション内の項目の数を示す<b>整数</b>を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.FileDialogFilters.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (object filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object filter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Delete(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional filter As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="filter">省略可能な<b>オブジェクト</b>です。 削除するフィルターを指定します。</param>
+        <summary>ファイルのダイアログ ボックスのフィルターを削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileDialogFilter Item (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.FileDialogFilter Item([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Integer) As FileDialogFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::FileDialogFilter ^ Item(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileDialogFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>整数</b>が必要です。 返される<b>FileDialogFilter</b>オブジェクトのインデックス番号です。</param>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.FileDialogFilter" />オブジェクトの指定したメンバーである<see cref="T:Microsoft.Office.Core.FileDialogFilters" />コレクションです。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,318 @@
+<Type Name="Scripts" FullName="Microsoft.Office.Core.Scripts">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3d47d002587c045d30ad740a840c614a1267790d" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660659" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Scripts : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scripts implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Scripts" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Scripts&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Scripts : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0340-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>コレクションの<see cref="T:Microsoft.Office.Core.Script" />、指定した文書の HTML スクリプトのコレクションを表すオブジェクト。</summary>
+    <remarks>
+      <para>
+        <b>Scripts</b>コレクションには、ソースの順序で、特定のドキュメント内の<b>スクリプト</b>オブジェクトのすべてが含まれています (<b>スクリプト</b>オブジェクトは、ソース ファイルに追加された順序)。ソース順は、ドキュメント内のスクリプトの位置 (ヘッダーまたは本文) の影響を受けません。<b>Scripts</b>コレクションを適切なオブジェクト (たとえば、Microsoft Word で<b>文書</b>オブジェクト) の<b>スクリプト</b>のプロパティを使用してアクセスできます</para>。
+      <para>はスクリプトにアクセスする、または Microsoft Word 文書、Microsoft Excel のワークシート、または Microsoft PowerPoint スライドにスクリプトを追加するのには、<b>スクリプト</b>オブジェクトを使用することができます。すべての HTML ページと Microsoft Office アプリケーションで開かれているスクリプトにアクセスする<b>スクリプト</b>のコレクションを使用することもできます</para>。
+      <para>メモ Microsoft Access は、この共有の Office コンポーネントを使用していない</para>。
+      <para>型<b>msoScriptAnchor</b>の<b>Shape</b>オブジェクトを<b>Scripts</b>コレクションに<b>Script</b>オブジェクトを追加するときに自動的に文書に追加されます。。 <b>Shapes</b>コレクションに図形を追加するのには、Excel ワークシート、または PowerPoint スライド、文書では、図形は<b>InlineShapes</b>コレクションに追加されます。使用してドキュメントに<b>スクリプト</b>を追加する、<see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />メソッドです</para>。<b>Scripts</b>コレクション内の特定の項目を使用して
+      <para>、<see cref="M:Microsoft.Office.Core.Scripts.Item(System.Object)" />メソッドの ID 属性を指定し、&lt;スクリプト&gt;タグまたはコレクション内のスクリプトの位置を示すインデックス番号です。ID は、ドキュメント内で一意である必要があります。場合重複する ID 属性では、最初のスクリプトで確認 ID が返されることがある</para>。
+      <para>使用して、<see cref="P:Microsoft.Office.Core.Scripts.Count" />プロパティに指定されたドキュメント内の<b>スクリプト</b>オブジェクトの数を決定します</para>。
+      <para>使用、 <see cref="M:Microsoft.Office.Core.Scripts.Delete" /> 、 <b>Scripts</b>コレクションからスクリプトを削除します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Add (object Anchor, Microsoft.Office.Core.MsoScriptLocation Location = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Microsoft.Office.Core.MsoScriptLanguage Language = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, string Id = &quot;&quot;, string Extended = &quot;&quot;, string ScriptText = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Add([in]object Anchor, [in]valuetype Microsoft.Office.Core.MsoScriptLocation Location, [in]valuetype Microsoft.Office.Core.MsoScriptLanguage Language, [in]string Id, [in]string Extended, [in]string ScriptText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Anchor As Object, Optional Location As MsoScriptLocation = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Optional Language As MsoScriptLanguage = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, Optional Id As String = &quot;&quot;, Optional Extended As String = &quot;&quot;, Optional ScriptText As String = &quot;&quot;) As Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Anchor" Type="System.Object">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IDispatchConstant</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="Location" Type="Microsoft.Office.Core.MsoScriptLocation" />
+        <Parameter Name="Language" Type="Microsoft.Office.Core.MsoScriptLanguage" />
+        <Parameter Name="Id" Type="System.String" />
+        <Parameter Name="Extended" Type="System.String" />
+        <Parameter Name="ScriptText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Anchor">省略可能な<b>オブジェクト</b>(Microsoft Excel の場合のみ)。 <paramref name="Anchor" />引数は、Excel<b>のワークシート</b>上のスクリプト アンカーの位置を指定する Excel<b>範囲</b>オブジェクトを受け入れます。 Excel グラフにスクリプト アンカーを挿入することはできません。</param>
+        <param name="Location">省略可能な<see cref="T:Microsoft.Office.Core.MsoScriptLocation" />。 ドキュメント内のスクリプト アンカーの位置を指定します。 指定した場合、<paramref name="Anchor" />の引数、<paramref name="Location" />引数を使用しません。場所、<paramref name="Anchor" />の引数は、スクリプト アンカーの位置を決定します。</param>
+        <param name="Language">省略可能な<see cref="T:Microsoft.Office.Core.MsoScriptLanguage" />。 スクリプト言語を指定します。</param>
+        <param name="Id">省略可能な<b>文字列</b>です。 ID、&lt;スクリプト&gt;HTML タグです。 <paramref name="Id" />の引数は、要素の名前付けに使用される SGML 識別子を指定します。 有効な識別子は、英字で始まり、英数字から構成されている任意の文字列を含める文字列には、アンダー スコア (_) も含めることができます。 ID は、HTML ドキュメント内で一意である必要があります。 このパラメーターは、ID 属性としてエクスポートされます、&lt;スクリプト&gt;タグです。</param>
+        <param name="Extended">省略可能な<b>文字列</b>です。 追加する属性を指定する、&lt;スクリプト&gt;タグ (言語と ID 属性をエクスポート、<paramref name="Language" />と<paramref name="Id" />パラメーターをエクスポートしないと、<paramref name="Extended" />パラメーター)。 既定値は、空の文字列です。 属性は、HTML の場合と同様、スペースで区切られます。 Microsoft Office ホスト アプリケーションの渡された属性の構文をチェックする手段が用意されません。</param>
+        <param name="ScriptText">省略可能な<b>文字列</b>です。 スクリプトのブロックに含まれているテキストを指定します。 既定値は、空の文字列です。 Microsoft Office ホスト アプリケーションでは、スクリプトの構文をチェックしません。</param>
+        <summary>追加、<see cref="T:Microsoft.Office.Core.Script" />オブジェクトを<see cref="T:Microsoft.Office.Core.Scripts" />、次のオブジェクトのいずれかのコレクション: Microsoft Word で<b>文書</b>または<b>指定範囲</b>のオブジェクトMicrosoft Excel での<b>ワークシート</b>または<b>グラフ</b>オブジェクトまたは、<b>スライド</b>、 <b>SlideRange</b>、スライド<b>マスター</b>、または、Microsoft PowerPoint で<b>マスター</b>オブジェクトのタイトルです。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>スクリプト ブロックのみがエクスポートを返します; エクスポート スクリプト ブロックに関連付けられている図形または HTML 内の図形として印刷します</para>。
+          <para>1 つ以上のスライドを含む PowerPoint スライド範囲にスクリプト アンカーを追加するのには、 <b>Add</b>メソッドを使用することはできません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトのコンテナー アプリケーションを表す<b>Application</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したコレクション内の項目の数を示す<b>整数</b>を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
+          <para>が返される数は、指定したドキュメントのスクリプト ブロックの数。Microsoft Word で、Scripts.Count はインラインと結合するフリーのスクリプト アンカーの合計数を返します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定されたオブジェクトは、Microsoft Word で作成されている場合このプロパティを返します 1297307460 を表す文字列 MSWD です。Microsoft Excel で作成された、このプロパティは 1480803660 を返します。この値を Word では、定数<b>wdCreatorCode</b>または Excel で<b>xlCreatorCode</b>によって表すこともできます</para>。
+          <para><b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh で使用するために設計されました。たとえば、Word には作成者コード MSWD です。このプロパティに関する詳細については、Microsoft Office Macintosh Edition に含まれているヘルプの言語リファレンスを参照してください</para>。
+          <para><b>作成者</b>プロパティが常に、アクティブなアプリケーションの数値識別子を返しますと同様、<see cref="P:Microsoft.Office.Core.Scripts.Application" />プロパティは常に文字列形式で作業中のアプリケーションの名前を返します。<b>CreatedBy</b>プロパティを使用して、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />、 <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />、および<see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" />これらのオブジェクトを作成したユーザーの名前を返すオブジェクト。Office ドキュメントの作成者についての情報を取得するドキュメントのプロパティを使用します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>コレクションから指定したオブジェクトを削除します。</summary>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Core.Scripts" /> 、 <b>Delete</b>メソッドを使用して、コレクションが指定した Microsoft Word 文書、Microsoft Excel のワークシート、または PowerPoint のスライドからすべてのスクリプトを削除します。スクリプト アンカーはホスト アプリケーションの図形で表されます。したがって、Excel および PowerPoint の<b>図形</b>のコレクションと、 <b>InlineShapes</b>と Word での<b>図形</b>のコレクションから、 <b>msoScriptAnchor</b>の型の場合は、各スクリプト アンカーに関連付けられている<b>Shape</b>オブジェクトが削除されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Script" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::Script ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>オブジェクト</b>が必要です。 返される ID またはスクリプトのインデックス番号です。</param>
+        <summary>メンバーを<see cref="T:Microsoft.Office.Core.Scripts" />コレクションです。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>インデックス番号または取得するのには Microsoft Office アプリケーションを変更するスクリプトの ID を受け取ります。<b>Item</b>メソッドでは、序数 (インデックス値) の場合、 <b>Scripts</b>コレクション内の位置に格納されているスクリプトを取得するを受け入れることができる<b>オブジェクト</b>の値、またはの名前または ID を表す<b>文字列</b>値、スクリプト</para>
+          <para>
+            <b>スクリプト</b>のコレクションには、すべてのソースの順序で、特定のドキュメント内のスクリプトが含まれています (順序<see cref="T:Microsoft.Office.Core.Script" />ソース ファイル内のオブジェクトが表示されます)。ドキュメント内の位置に関係なく、ソースの順序でスクリプトが使用されます-つまり、かどうかして、ヘッダーまたは本文のテキストにします</para>。ID を使用して、 <b>Scripts</b>コレクション内のスクリプトにアクセスするのには<b>Item</b>メソッドを使用することができます
+          <para>、&lt;スクリプト&gt;タグです。ID 属性の&lt;スクリプト&gt;タグは、<see cref="P:Microsoft.Office.Core.Script.Id" />の<b>スクリプト</b>オブジェクトのプロパティです。重複する、またはドキュメントに複数の Id では、 <b>Script</b>オブジェクトの<b>Id</b>プロパティを使用して、 <b>Item</b>メソッドを使用してスクリプトにアクセスするのには、Office は、ID に一致する最初のスクリプトを返します同じ ID を持つその他のスクリプトは無視されます</para>。
+          <para>新しいスクリプト アンカーがコレクションに追加は、文書に追加された順に<b>Scripts</b>コレクションの末尾に追加されます。スクリプト アンカーは、ドキュメントが html 形式で保存、閉じられ、ホスト アプリケーションで再び開くまでこの順序でままです。<b>Scripts</b>コレクションに追加された順序とは異なる場合がありますドキュメントのスクリプト アンカーが表示される順序でインデックスを作成するのには、以下の手順です。したがって、ことをお勧めするスクリプトの id を確認する、コレクション内のスクリプトの位置ではなく、 <b>Script</b>オブジェクトの<b>Id</b>プロパティを使用する</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの<b>親</b>オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
